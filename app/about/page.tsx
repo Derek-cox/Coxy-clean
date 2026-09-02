@@ -55,7 +55,7 @@ export default function AboutPage() {
         <p className="mt-4 text-slate-600">
           We started Coxy Clean to bring hotel-level attention to detail to
           everyday homes, Airbnb rentals, and local businesses — without the
-          high price tag or scheduling headaches. Today we're proud to serve
+          high price tag or scheduling headaches. Today we&apos;re proud to serve
           homeowners, landlords, hosts, and businesses across State College
           and the surrounding area.
         </p>
