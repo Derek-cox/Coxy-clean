@@ -30,7 +30,7 @@ export default function HiringPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
       <div className="max-w-2xl">
-        <span className="inline-flex items-center rounded-full bg-brand-100 px-4 py-1 text-sm font-medium text-brand-700">
+        <span className="inline-flex items-center rounded-full bg-accent-100 px-4 py-1 text-sm font-medium text-accent-700">
           We&apos;re Hiring
         </span>
         <h1 className="mt-6 text-4xl font-bold tracking-tight text-slate-900">

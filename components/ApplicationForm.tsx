@@ -92,7 +92,7 @@ export default function ApplicationForm() {
             type="tel"
             required
             className="mt-1.5 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-sm text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
-            placeholder="(814) 555-0123"
+            placeholder="(814) 280-7074"
           />
         </div>
         <div>
@@ -139,7 +139,7 @@ export default function ApplicationForm() {
       </div>
 
       {status === "error" && (
-        <p className="text-sm text-red-600">
+        <p className="text-sm text-accent-600">
           Something went wrong submitting your application. Please try
           again, or email your resume to careers@coxyclean.com.
         </p>

@@ -23,8 +23,8 @@ export default function ContactPage() {
           <div className="mt-8 space-y-6">
             <div>
               <h2 className="text-sm font-semibold text-slate-900">Phone</h2>
-              <a href="tel:+18145550123" className="text-brand-600">
-                (814) 555-0123
+              <a href="tel:+18142807074" className="text-brand-600">
+                (814) 280-7074
               </a>
             </div>
             <div>

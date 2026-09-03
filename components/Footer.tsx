@@ -32,8 +32,8 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-slate-500">
             <li>State College, PA</li>
             <li>
-              <a href="tel:+18145550123" className="hover:text-brand-600">
-                (814) 555-0123
+              <a href="tel:+18142807074" className="hover:text-brand-600">
+                (814) 280-7074
               </a>
             </li>
             <li>

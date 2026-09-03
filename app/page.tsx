@@ -72,7 +72,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/services"
-                className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-brand-600 hover:text-brand-600"
+                className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-accent-600 hover:text-accent-600"
               >
                 View Services
               </Link>
@@ -91,7 +91,7 @@ export default function HomePage() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] w-full rounded-3xl bg-gradient-to-br from-brand-400 to-brand-700 shadow-xl" />
+            <div className="aspect-[4/5] w-full rounded-3xl bg-gradient-to-br from-brand-500 via-white to-accent-500 shadow-xl" />
             <div className="absolute -bottom-6 -left-6 w-56 rounded-2xl bg-white p-5 shadow-lg">
               <p className="text-sm font-semibold text-slate-900">
                 &ldquo;Coxy Clean turns our Airbnb around every single time,
@@ -160,17 +160,17 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="flex flex-col items-center gap-6 rounded-3xl bg-brand-600 px-8 py-14 text-center sm:px-16">
+        <div className="flex flex-col items-center gap-6 rounded-3xl bg-accent-600 px-8 py-14 text-center sm:px-16">
           <h2 className="text-3xl font-bold tracking-tight text-white">
             Ready for a cleaner space?
           </h2>
-          <p className="max-w-xl text-brand-50">
+          <p className="max-w-xl text-accent-50">
             Get a free, no-obligation quote for your home, rental, or
             business in State College — usually within one business day.
           </p>
           <Link
             href="/contact"
-            className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-700 shadow-sm transition hover:bg-brand-50"
+            className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-accent-700 shadow-sm transition hover:bg-accent-50"
           >
             Request Your Free Quote
           </Link>

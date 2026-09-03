@@ -15,8 +15,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur">
+      <div className="flex h-1">
+        <div className="flex-1 bg-brand-600" />
+        <div className="flex-1 bg-white" />
+        <div className="flex-1 bg-accent-600" />
+      </div>
+      <nav className="mx-auto flex max-w-6xl items-center justify-between border-b border-slate-200 px-6 py-4">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-white font-bold">
             C
