@@ -139,7 +139,7 @@ export default function ApplicationForm() {
       </div>
 
       {status === "error" && (
-        <p className="text-sm text-accent-600">
+        <p className="text-sm text-red-600">
           Something went wrong submitting your application. Please try
           again, or email your resume to careers@coxyclean.com.
         </p>

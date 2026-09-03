@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionWave from "@/components/SectionWave";
-import TricolorRibbon from "@/components/TricolorRibbon";
 import {
   BuildingIcon,
   ChatIcon,
@@ -107,7 +106,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/services"
-                className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-accent-600 hover:text-accent-600 hover:shadow-lg active:translate-y-0"
+                className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-accent-700 hover:text-accent-700 hover:shadow-lg active:translate-y-0"
               >
                 View Services
               </Link>
@@ -145,7 +144,6 @@ export default function HomePage() {
                   priority
                 />
               </div>
-              <TricolorRibbon className="-right-6 top-2 sm:-right-10" />
             </div>
             <div className="absolute -bottom-2 left-0 w-56 rounded-2xl bg-white p-5 shadow-lg ring-1 ring-slate-100 sm:-left-4">
               <p className="text-sm font-semibold text-slate-900">
@@ -250,25 +248,25 @@ export default function HomePage() {
 
       <section className="relative mx-auto max-w-6xl px-6 py-24">
         <Reveal>
-          <div className="relative flex flex-col items-center gap-6 overflow-hidden rounded-3xl bg-accent-600 px-8 py-14 text-center sm:px-16">
+          <div className="relative flex flex-col items-center gap-6 overflow-hidden rounded-3xl bg-brand-600 px-8 py-14 text-center sm:px-16">
             <div
               aria-hidden="true"
-              className="absolute -right-10 -top-10 h-40 w-40 rotate-12 rounded-3xl bg-white/10"
+              className="absolute -right-10 -top-10 h-40 w-40 rotate-12 rounded-3xl bg-white/5"
             />
             <div
               aria-hidden="true"
-              className="absolute -bottom-12 -left-12 h-40 w-40 -rotate-12 rounded-3xl bg-brand-500/20"
+              className="absolute -bottom-12 -left-12 h-40 w-40 -rotate-12 rounded-3xl bg-accent-400/10"
             />
             <h2 className="relative font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               Ready for a cleaner space?
             </h2>
-            <p className="relative max-w-xl text-accent-50">
+            <p className="relative max-w-xl text-white/70">
               Get a free, no-obligation quote for your home, rental, or
               business in State College — usually within one business day.
             </p>
             <Link
               href="/contact"
-              className="relative rounded-full bg-white px-6 py-3 text-sm font-semibold text-accent-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-50 hover:shadow-lg active:translate-y-0"
+              className="relative rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-lg active:translate-y-0"
             >
               Request Your Free Quote
             </Link>

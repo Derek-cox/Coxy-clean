@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import TricolorRibbon from "@/components/TricolorRibbon";
 import {
   ChatIcon,
   HandshakeIcon,
@@ -87,7 +86,6 @@ export default function AboutPage() {
                   className="object-contain object-bottom drop-shadow-2xl"
                 />
               </div>
-              <TricolorRibbon className="-left-6 top-2 sm:-left-10" />
             </div>
           </Reveal>
         </div>

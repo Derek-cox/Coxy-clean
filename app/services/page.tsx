@@ -185,7 +185,7 @@ export default function ServicesPage() {
               <ul className="mt-4 space-y-2 text-sm text-slate-600">
                 {moveCleanAddOns.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <PlusIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-600" />
+                    <PlusIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-700" />
                     {item}
                   </li>
                 ))}
