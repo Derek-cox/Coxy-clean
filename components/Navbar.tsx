@@ -26,7 +26,7 @@ export default function Navbar() {
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-white font-bold">
             C
           </span>
-          <span className="text-lg font-semibold tracking-tight text-slate-900">
+          <span className="font-display text-xl font-semibold tracking-tight text-slate-900">
             Coxy Clean
           </span>
         </Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700"
+            className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md active:translate-y-0"
           >
             Get a Free Quote
           </Link>

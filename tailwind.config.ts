@@ -35,6 +35,16 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
+      },
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0px) rotate(-1deg)" },
+          "50%": { transform: "translateY(-10px) rotate(1deg)" },
+        },
+      },
+      animation: {
+        float: "float 6s ease-in-out infinite",
       },
     },
   },

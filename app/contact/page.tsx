@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Contact Us | Coxy Clean",
@@ -11,11 +12,11 @@ export default function ContactPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
       <div className="grid gap-12 md:grid-cols-5">
-        <div className="md:col-span-2">
-          <h1 className="text-4xl font-bold tracking-tight text-slate-900">
+        <Reveal className="md:col-span-2">
+          <h1 className="font-display text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
             Get in Touch
           </h1>
-          <p className="mt-4 text-slate-600">
+          <p className="mt-5 text-slate-600">
             Fill out the form and we&apos;ll send you a free quote — usually
             within one business day. Prefer to talk? Give us a call.
           </p>
@@ -53,13 +54,13 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="md:col-span-3">
+        <Reveal delay={100} className="md:col-span-3">
           <div className="rounded-2xl border border-slate-200 p-8">
             <ContactForm />
           </div>
-        </div>
+        </Reveal>
       </div>
     </div>
   );

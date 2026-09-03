@@ -9,7 +9,7 @@ export default function Footer() {
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-sm font-bold text-white">
               C
             </span>
-            <span className="font-semibold text-slate-900">Coxy Clean</span>
+            <span className="font-display text-lg font-semibold text-slate-900">Coxy Clean</span>
           </div>
           <p className="mt-3 text-sm text-slate-500">
             Reliable, detail-oriented cleaning for State College, PA and the
