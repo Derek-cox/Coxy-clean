@@ -1,25 +1,29 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const valueProps = [
   {
-    title: "Locally Owned & Trusted",
+    title: "Family-Owned & Local",
     description:
-      "Based right here in State College, we know the area and treat every home like a neighbor's.",
+      "Family-owned and locally operated right here in State College.",
   },
   {
-    title: "Vetted & Insured Team",
-    description:
-      "Every cleaner is background-checked, trained, and fully insured for your peace of mind.",
+    title: "Fully Insured",
+    description: "We're fully insured for your peace of mind.",
   },
   {
-    title: "Flexible Scheduling",
-    description:
-      "One-time, weekly, or Airbnb turnovers between guests — we work around your calendar.",
+    title: "Trustworthy & Honest",
+    description: "Honest, trustworthy service you can count on, every visit.",
   },
   {
-    title: "Satisfaction Guaranteed",
+    title: "Direct Line to the Owner",
     description:
-      "Not happy with a spot we missed? Tell us within 24 hours and we'll make it right, free.",
+      "Talk directly with the owner — clear, direct communication, no middlemen.",
+  },
+  {
+    title: "Detail-Driven Process",
+    description:
+      "A thorough, detail-driven cleaning process for every job, every time.",
   },
 ];
 
@@ -79,20 +83,29 @@ export default function HomePage() {
             </div>
             <div className="mt-10 flex items-center gap-6 text-sm text-slate-500">
               <div>
-                <p className="text-2xl font-bold text-slate-900">100%</p>
-                <p>Satisfaction guaranteed</p>
+                <p className="text-2xl font-bold text-slate-900">Family-Owned</p>
+                <p>Locally operated in State College</p>
               </div>
               <div className="h-10 w-px bg-slate-200" />
               <div>
-                <p className="text-2xl font-bold text-slate-900">Insured</p>
-                <p>&amp; background-checked team</p>
+                <p className="text-2xl font-bold text-slate-900">Fully Insured</p>
+                <p>For your peace of mind</p>
               </div>
             </div>
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] w-full rounded-3xl bg-gradient-to-br from-brand-500 via-white to-accent-500 shadow-xl" />
-            <div className="absolute -bottom-6 -left-6 w-56 rounded-2xl bg-white p-5 shadow-lg">
+            <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 md:max-w-none">
+              <Image
+                src="/mascot.jpg"
+                alt="Coxy Clean mascot illustration — an Italian-flag-themed cleaner holding a mop and bucket"
+                fill
+                sizes="(min-width: 768px) 480px, 384px"
+                className="object-contain p-6"
+                priority
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-6 w-56 rounded-2xl bg-white p-5 shadow-lg ring-1 ring-slate-100">
               <p className="text-sm font-semibold text-slate-900">
                 &ldquo;Coxy Clean turns our Airbnb around every single time,
                 spotless.&rdquo;
@@ -115,7 +128,7 @@ export default function HomePage() {
             space — with the same care and attention to detail.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {valueProps.map((item) => (
             <div key={item.title} className="rounded-2xl border border-slate-200 p-6">
               <h3 className="font-semibold text-slate-900">{item.title}</h3>

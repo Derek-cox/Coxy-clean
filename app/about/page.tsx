@@ -1,64 +1,71 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About Us | Coxy Clean",
   description:
-    "Coxy Clean is a locally owned cleaning company serving State College, PA. Learn why homeowners, hosts, and businesses choose us.",
+    "Coxy Clean is a family-owned cleaning company serving State College, PA. Learn why homeowners, hosts, and businesses choose us.",
 };
 
 const reasons = [
   {
-    title: "Local & Reliable",
+    title: "Family-Owned & Local",
     description:
-      "We're based in State College and know the community — from Downtown apartments to homes near Penn State. You can count on us to show up on time, every time.",
+      "Family-owned and locally operated right here in State College.",
   },
   {
-    title: "Trained, Insured Team",
-    description:
-      "Every member of our team is background-checked, trained on our cleaning standards, and fully insured, so you can welcome us into your space with confidence.",
+    title: "Fully Insured",
+    description: "We're fully insured for your peace of mind.",
   },
   {
-    title: "Consistent Quality",
-    description:
-      "We follow detailed checklists for every job type, so your space gets the same thorough clean whether it's your first visit or your fiftieth.",
+    title: "Trustworthy & Honest",
+    description: "Honest, trustworthy service you can count on, every visit.",
   },
   {
-    title: "Eco-Conscious Products",
+    title: "Direct Line to the Owner",
     description:
-      "We use effective, low-toxicity cleaning products that are safe for kids, pets, and guests without sacrificing a deep clean.",
+      "Talk directly with the owner — clear, direct communication, no middlemen.",
   },
   {
-    title: "Easy to Work With",
+    title: "Detail-Driven Process",
     description:
-      "Simple booking, clear pricing, and a team that communicates — no surprises, no hassle.",
-  },
-  {
-    title: "Satisfaction Guaranteed",
-    description:
-      "If something isn't right, tell us within 24 hours and we'll come back to fix it at no extra cost.",
+      "A thorough, detail-driven cleaning process for every job, every time.",
   },
 ];
 
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
-      <div className="max-w-2xl">
-        <h1 className="text-4xl font-bold tracking-tight text-slate-900">
-          About Coxy Clean
-        </h1>
-        <p className="mt-4 text-lg text-slate-600">
-          Coxy Clean is a locally owned and operated cleaning company built
-          around one simple idea: everyone in State College deserves a
-          reliably clean space, delivered by a team you can trust.
-        </p>
-        <p className="mt-4 text-slate-600">
-          We started Coxy Clean to bring hotel-level attention to detail to
-          everyday homes, Airbnb rentals, and local businesses — without the
-          high price tag or scheduling headaches. Today we&apos;re proud to serve
-          homeowners, landlords, hosts, and businesses across State College
-          and the surrounding area.
-        </p>
+      <div className="grid items-center gap-12 md:grid-cols-2">
+        <div>
+          <h1 className="text-4xl font-bold tracking-tight text-slate-900">
+            About Coxy Clean
+          </h1>
+          <p className="mt-4 text-lg text-slate-600">
+            Coxy Clean is a family-owned and locally operated cleaning
+            company built around one simple idea: everyone in State College
+            deserves a reliably clean space, delivered by a team you can
+            trust.
+          </p>
+          <p className="mt-4 text-slate-600">
+            We started Coxy Clean to bring hotel-level attention to detail to
+            everyday homes, Airbnb rentals, and local businesses — without
+            the high price tag or scheduling headaches. Today we&apos;re
+            proud to serve homeowners, landlords, hosts, and businesses
+            across State College and the surrounding area.
+          </p>
+        </div>
+
+        <div className="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-slate-200 md:max-w-none">
+          <Image
+            src="/mascot.jpg"
+            alt="Coxy Clean mascot illustration — an Italian-flag-themed cleaner holding a mop and bucket"
+            fill
+            sizes="(min-width: 768px) 480px, 384px"
+            className="object-contain p-6"
+          />
+        </div>
       </div>
 
       <div className="mt-16">
