@@ -1,22 +1,26 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="border-t border-slate-200 bg-slate-50">
-      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 sm:grid-cols-2 md:grid-cols-4">
-        <div>
-          <div className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-sm font-bold text-white">
-              C
-            </span>
-            <span className="font-display text-lg font-semibold text-slate-900">Coxy Clean</span>
-          </div>
-          <p className="mt-3 text-sm text-slate-500">
+      <div className="mx-auto max-w-6xl px-6 pt-12">
+        <div className="flex flex-col items-center gap-6 border-b border-slate-200 pb-10 text-center sm:flex-row sm:text-left">
+          <Image
+            src="/logo-full.png"
+            alt="Coxy Clean — My house is clean cuz it's Coxy Clean"
+            width={1823}
+            height={3060}
+            className="h-44 w-auto flex-shrink-0 sm:h-56 md:h-64"
+          />
+          <p className="max-w-sm text-sm text-slate-500">
             Reliable, detail-oriented cleaning for State College, PA and the
             surrounding areas.
           </p>
         </div>
+      </div>
 
+      <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 sm:grid-cols-3">
         <div>
           <h3 className="text-sm font-semibold text-slate-900">Company</h3>
           <ul className="mt-3 space-y-2 text-sm text-slate-500">

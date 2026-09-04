@@ -72,18 +72,18 @@ export default function AboutPage() {
           </Reveal>
 
           <Reveal delay={150} className="relative">
-            <div className="relative mx-auto w-full max-w-sm md:mx-0 md:mr-auto md:w-[112%]">
+            <div className="relative mx-auto w-full max-w-[260px] md:mx-0 md:mr-auto md:max-w-[340px]">
               <div
                 aria-hidden="true"
                 className="absolute inset-6 -z-10 -rotate-2 rounded-[2.5rem] bg-gradient-to-br from-accent-50 via-white to-brand-50 md:inset-10"
               />
-              <div className="relative aspect-[639/893] w-full rotate-2">
+              <div className="relative aspect-[1823/3060] w-full">
                 <Image
-                  src="/mascot.png"
-                  alt="Coxy Clean mascot illustration — an Italian-flag-themed cleaner holding a mop and bucket"
+                  src="/logo-full.png"
+                  alt="Coxy Clean logo — My house is clean cuz it's Coxy Clean"
                   fill
-                  sizes="(min-width: 768px) 480px, 384px"
-                  className="object-contain object-bottom drop-shadow-2xl"
+                  sizes="(min-width: 768px) 380px, 320px"
+                  className="object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
