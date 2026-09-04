@@ -51,28 +51,24 @@ const services = [
       "Fast, reliable turnovers between guests so your listing stays five-star ready.",
     href: "/services",
     icon: MopBucketIcon,
-    big: true,
   },
   {
     title: "Residential Cleaning",
     description: "Recurring or one-time home cleaning tailored to your household.",
     href: "/services",
     icon: HomeHeartIcon,
-    big: false,
   },
   {
     title: "Commercial Cleaning",
     description: "Offices and small businesses across State College, cleaned on your schedule.",
     href: "/services",
     icon: BuildingIcon,
-    big: false,
   },
   {
     title: "Move-Out Cleaning",
     description: "Deep, deposit-ready cleans for tenants, landlords, and students.",
     href: "/services",
     icon: SuitcaseIcon,
-    big: false,
   },
 ];
 
@@ -221,35 +217,23 @@ export default function HomePage() {
               See all services &amp; pricing &rarr;
             </Link>
           </Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {services.map((service, i) => (
-              <Reveal
-                key={service.title}
-                delay={i * 75}
-                className={service.big ? "md:col-span-2" : "md:col-span-1"}
-              >
+              <Reveal key={service.title} delay={i * 75} className="h-full">
                 <Link
                   href={service.href}
-                  className={`group flex h-full flex-col justify-between rounded-2xl border border-white/15 bg-white/10 p-7 shadow-glow-accent backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.14] hover:shadow-glow-green hover:backdrop-blur-lg ${
-                    service.big ? "sm:flex-row sm:items-center sm:gap-8" : ""
-                  }`}
+                  className="group flex h-full flex-col rounded-2xl border border-white/15 bg-white/10 p-7 shadow-glow-accent backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.14] hover:shadow-glow-green hover:backdrop-blur-lg"
                 >
-                  <div>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300 transition-colors duration-300 group-hover:bg-white/25 group-hover:text-white">
-                      <service.icon className="h-6 w-6" />
-                    </div>
-                    <h3 className="mt-4 font-display text-xl font-bold text-white">
-                      {service.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-white/70">
-                      {service.description}
-                    </p>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300 transition-colors duration-300 group-hover:bg-white/25 group-hover:text-white">
+                    <service.icon className="h-6 w-6" />
                   </div>
-                  <span
-                    className={`mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent-300 transition-transform duration-300 group-hover:translate-x-1 ${
-                      service.big ? "sm:mt-0 sm:flex-shrink-0" : ""
-                    }`}
-                  >
+                  <h3 className="mt-4 font-display text-xl font-bold text-white">
+                    {service.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-white/70">
+                    {service.description}
+                  </p>
+                  <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-accent-300 transition-transform duration-300 group-hover:translate-x-1">
                     Learn more &rarr;
                   </span>
                 </Link>
