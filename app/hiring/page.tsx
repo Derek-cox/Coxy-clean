@@ -65,7 +65,10 @@ export default function HiringPage() {
 
       <div className="mt-16 grid gap-12 md:grid-cols-5">
         <Reveal className="md:col-span-2">
-          <h2 className="font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
+            Join The Team
+          </p>
+          <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
             Apply now
           </h2>
           <p className="mt-4 text-slate-600 leading-relaxed">

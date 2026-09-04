@@ -53,7 +53,10 @@ export default function AboutPage() {
       <div className="mx-auto max-w-6xl px-6 pb-8 pt-16 sm:pt-20">
         <div className="grid items-center gap-16 md:grid-cols-2">
           <Reveal>
-            <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
+              About Us
+            </p>
+            <h1 className="mt-3 font-display text-5xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl">
               About Coxy Clean
             </h1>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">
@@ -97,7 +100,10 @@ export default function AboutPage() {
             aria-hidden="true"
             className="absolute -left-6 -top-6 -z-10 h-28 w-28 rounded-full bg-brand-300 opacity-20 blur-3xl"
           />
-          <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
+            The Coxy Clean Difference
+          </p>
+          <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Why choose us
           </h2>
         </Reveal>

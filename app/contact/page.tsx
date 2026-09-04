@@ -13,7 +13,10 @@ export default function ContactPage() {
     <div className="mx-auto max-w-6xl px-6 py-20">
       <div className="grid gap-12 md:grid-cols-5">
         <Reveal className="md:col-span-2">
-          <h1 className="font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
+            Contact
+          </p>
+          <h1 className="mt-3 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
             Get in Touch
           </h1>
           <p className="mt-5 text-slate-600 leading-relaxed">

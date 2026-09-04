@@ -99,7 +99,10 @@ export default function ServicesPage() {
           aria-hidden="true"
           className="absolute -left-10 -top-10 -z-10 h-40 w-40 rounded-full bg-accent-300 opacity-20 blur-3xl"
         />
-        <h1 className="font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
+          What We Offer
+        </p>
+        <h1 className="mt-3 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
           Services &amp; Pricing
         </h1>
         <p className="mt-5 text-lg text-slate-600 leading-relaxed">
@@ -143,9 +146,9 @@ export default function ServicesPage() {
                 </ul>
                 <Link
                   href="/contact"
-                  className="btn-shine mt-8 inline-flex w-fit items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-glow-accent active:translate-y-0"
+                  className="mt-8 inline-flex w-fit items-center gap-1 text-sm font-semibold text-accent-300 transition-transform duration-300 hover:translate-x-1 hover:text-accent-200"
                 >
-                  Get a Quote
+                  Get a Quote &rarr;
                 </Link>
               </div>
             </Reveal>
@@ -159,7 +162,10 @@ export default function ServicesPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300">
                   <SparkleChecklistIcon className="h-6 w-6" />
                 </div>
-                <h2 className="mt-4 font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
+                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent-400">
+                  Featured Service
+                </p>
+                <h2 className="mt-2 font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
                   Move-In / Move-Out / First-Time Deep Clean
                 </h2>
                 <p className="mt-3 max-w-2xl text-white/70">

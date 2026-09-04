@@ -170,7 +170,10 @@ export default function HomePage() {
             aria-hidden="true"
             className="absolute left-1/2 top-1/2 -z-10 h-32 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent-300 opacity-20 blur-3xl"
           />
-          <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
+            Trust &amp; Reliability
+          </p>
+          <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
             Why State College trusts Coxy Clean
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-slate-600">
@@ -199,7 +202,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6">
           <Reveal className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <h2 className="font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-400">
+                Our Services
+              </p>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
                 What we clean
               </h2>
               <p className="mt-4 max-w-xl text-white/70">
@@ -265,9 +271,14 @@ export default function HomePage() {
               aria-hidden="true"
               className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-accent-400/20 blur-3xl"
             />
-            <h2 className="relative font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
-              Ready for a cleaner space?
-            </h2>
+            <div className="relative">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-300">
+                Get Started
+              </p>
+              <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                Ready for a cleaner space?
+              </h2>
+            </div>
             <p className="relative max-w-xl text-white/70">
               Get a free, no-obligation quote for your home, rental, or
               business in State College — usually within one business day.
