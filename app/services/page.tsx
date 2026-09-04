@@ -94,7 +94,11 @@ function PlusIcon({ className }: { className?: string }) {
 export default function ServicesPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 py-20">
-      <Reveal className="max-w-2xl">
+      <Reveal className="relative max-w-2xl">
+        <div
+          aria-hidden="true"
+          className="absolute -left-10 -top-10 -z-10 h-40 w-40 rounded-full bg-accent-300 opacity-20 blur-3xl"
+        />
         <h1 className="font-display text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
           Services &amp; Pricing
         </h1>
@@ -105,102 +109,113 @@ export default function ServicesPage() {
         </p>
       </Reveal>
 
-      <div className="mt-14 grid gap-6 md:grid-cols-3">
-        {services.map((service, i) => (
-          <Reveal key={service.name} delay={i * 75}>
-            <div className="group flex h-full flex-col rounded-2xl border border-slate-200 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-xl">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-600 transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white">
-                <service.icon className="h-6 w-6" />
+      <div className="relative mt-14 overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-brand-800 via-brand-700 to-brand-600 p-6 shadow-glow-brand sm:p-10 md:p-14">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-accent-400/10 blur-3xl"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-white/5 blur-3xl"
+        />
+
+        <div className="relative grid gap-6 md:grid-cols-3">
+          {services.map((service, i) => (
+            <Reveal key={service.name} delay={i * 75}>
+              <div className="group flex h-full flex-col rounded-2xl border border-white/15 bg-white/10 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.14] hover:shadow-glow-green hover:backdrop-blur-lg">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300 transition-colors duration-300 group-hover:bg-white/25 group-hover:text-white">
+                  <service.icon className="h-6 w-6" />
+                </div>
+                <h2 className="mt-4 font-display text-xl font-semibold text-white">
+                  {service.name}
+                </h2>
+                <p className="mt-2 text-sm font-semibold text-accent-300">
+                  Custom quote based on your space
+                </p>
+                <p className="mt-4 text-sm text-white/70">{service.description}</p>
+                <ul className="mt-6 space-y-2 text-sm text-white/70">
+                  {service.includes.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <CheckIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-300" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/contact"
+                  className="btn-shine mt-8 inline-flex w-fit items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-glow-accent active:translate-y-0"
+                >
+                  Get a Quote
+                </Link>
               </div>
-              <h2 className="mt-4 font-display text-xl font-semibold text-slate-900">
-                {service.name}
-              </h2>
-              <p className="mt-2 text-sm font-semibold text-brand-600">
-                Custom quote based on your space
-              </p>
-              <p className="mt-4 text-sm text-slate-600">{service.description}</p>
-              <ul className="mt-6 space-y-2 text-sm text-slate-600">
-                {service.includes.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <CheckIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-brand-600" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                href="/contact"
-                className="mt-8 inline-flex w-fit items-center rounded-full bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-lg active:translate-y-0"
-              >
-                Get a Quote
-              </Link>
-            </div>
-          </Reveal>
-        ))}
-      </div>
-
-      <Reveal delay={150}>
-        <div className="mt-16 rounded-3xl border border-slate-200 bg-slate-50 p-8 sm:p-10">
-          <div className="flex flex-wrap items-start justify-between gap-6">
-            <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-50 text-accent-600">
-                <SparkleChecklistIcon className="h-6 w-6" />
-              </div>
-              <h2 className="mt-4 font-display text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
-                Move-In / Move-Out / First-Time Deep Clean
-              </h2>
-              <p className="mt-3 max-w-2xl text-slate-600">
-                A thorough, top-to-bottom deep clean for tenants, landlords,
-                students, and homeowners moving in or out of a property — or
-                anyone booking us for the first time.
-              </p>
-            </div>
-            <div className="rounded-2xl bg-white px-6 py-4 shadow-sm ring-1 ring-slate-200">
-              <p className="font-display text-lg font-semibold text-brand-600">
-                Estimated $0.15&ndash;$0.30 per sq ft
-              </p>
-              <p className="mt-1 text-xs text-slate-500">
-                Final quote depends on condition and scope
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-8 grid gap-8 sm:grid-cols-2">
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-900">
-                Included
-              </h3>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {moveCleanIncluded.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <CheckIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-brand-600" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-slate-900">
-                Available as Add-Ons (extra charge)
-              </h3>
-              <ul className="mt-4 space-y-2 text-sm text-slate-600">
-                {moveCleanAddOns.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <PlusIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-700" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <Link
-            href="/contact"
-            className="mt-8 inline-flex w-fit items-center rounded-full bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-lg active:translate-y-0"
-          >
-            Get a Quote
-          </Link>
+            </Reveal>
+          ))}
         </div>
-      </Reveal>
+
+        <Reveal delay={150} className="relative mt-10">
+          <div className="rounded-3xl border border-white/15 bg-white/10 p-8 backdrop-blur-md sm:p-10">
+            <div className="flex flex-wrap items-start justify-between gap-6">
+              <div>
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300">
+                  <SparkleChecklistIcon className="h-6 w-6" />
+                </div>
+                <h2 className="mt-4 font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                  Move-In / Move-Out / First-Time Deep Clean
+                </h2>
+                <p className="mt-3 max-w-2xl text-white/70">
+                  A thorough, top-to-bottom deep clean for tenants, landlords,
+                  students, and homeowners moving in or out of a property —
+                  or anyone booking us for the first time.
+                </p>
+              </div>
+              <div className="rounded-2xl bg-white/95 px-6 py-4 shadow-lg">
+                <p className="font-display text-lg font-semibold text-brand-700">
+                  Estimated $0.15&ndash;$0.30 per sq ft
+                </p>
+                <p className="mt-1 text-xs text-slate-500">
+                  Final quote depends on condition and scope
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 grid gap-8 sm:grid-cols-2">
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-white/90">
+                  Included
+                </h3>
+                <ul className="mt-4 space-y-2 text-sm text-white/70">
+                  {moveCleanIncluded.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <CheckIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-300" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-white/90">
+                  Available as Add-Ons (extra charge)
+                </h3>
+                <ul className="mt-4 space-y-2 text-sm text-white/70">
+                  {moveCleanAddOns.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <PlusIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-white/50" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <Link
+              href="/contact"
+              className="btn-shine mt-8 inline-flex w-fit items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-glow-accent active:translate-y-0"
+            >
+              Get a Quote
+            </Link>
+          </div>
+        </Reveal>
+      </div>
 
       <p className="mt-10 text-sm text-slate-500">
         All pricing is customized to your space and needs. Contact us for an

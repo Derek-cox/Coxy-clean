@@ -37,6 +37,12 @@ const config: Config = {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         display: ["var(--font-display)", "Georgia", "serif"],
       },
+      boxShadow: {
+        "glow-brand": "0 0 36px -6px rgba(40,34,70,0.5)",
+        "glow-accent": "0 0 32px -6px rgba(232,184,0,0.45)",
+        "glow-green": "0 0 30px -6px rgba(22,163,74,0.45)",
+        "glow-red": "0 0 30px -6px rgba(220,38,38,0.4)",
+      },
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0px) rotate(-1deg)" },

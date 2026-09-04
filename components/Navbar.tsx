@@ -38,7 +38,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className="rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-md active:translate-y-0"
+            className="btn-shine rounded-full bg-brand-600 px-5 py-2 text-sm font-semibold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-glow-green active:translate-y-0"
           >
             Get a Free Quote
           </Link>

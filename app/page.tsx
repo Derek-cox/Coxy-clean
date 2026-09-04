@@ -80,7 +80,11 @@ export default function HomePage() {
   return (
     <>
       <section className="relative overflow-x-hidden bg-slate-50">
-        <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 pb-24 pt-16 md:grid-cols-2 md:pb-32 md:pt-20">
+        <div
+          aria-hidden="true"
+          className="hero-aurora absolute inset-0 opacity-[0.16]"
+        />
+        <div className="relative mx-auto grid max-w-6xl items-center gap-16 px-6 pb-24 pt-16 md:grid-cols-2 md:pb-32 md:pt-20">
           <Reveal>
             <span className="inline-flex items-center rounded-full bg-brand-100 px-4 py-1 text-sm font-medium text-brand-700">
               Serving State College, PA &amp; the surrounding area
@@ -100,13 +104,13 @@ export default function HomePage() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href="/contact"
-                className="rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-lg active:translate-y-0"
+                className="btn-shine rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-glow-green active:translate-y-0"
               >
                 Get a Free Quote
               </Link>
               <Link
                 href="/services"
-                className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-accent-700 hover:text-accent-700 hover:shadow-lg active:translate-y-0"
+                className="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-accent-700 hover:text-accent-700 hover:shadow-glow-accent active:translate-y-0"
               >
                 View Services
               </Link>
@@ -132,7 +136,7 @@ export default function HomePage() {
             <div className="relative mx-auto w-full max-w-sm md:mx-0 md:ml-auto md:w-[112%]">
               <div
                 aria-hidden="true"
-                className="absolute inset-6 -z-10 rotate-3 rounded-[2.5rem] bg-gradient-to-br from-brand-50 via-white to-accent-50 md:inset-10"
+                className="absolute inset-0 -z-10 rounded-full bg-gradient-to-br from-brand-400 via-accent-300 to-brand-500 opacity-40 blur-3xl md:-inset-6"
               />
               <div className="relative aspect-[639/893] w-full -rotate-2">
                 <Image
@@ -140,12 +144,12 @@ export default function HomePage() {
                   alt="Coxy Clean mascot illustration — an Italian-flag-themed cleaner holding a mop and bucket"
                   fill
                   sizes="(min-width: 768px) 480px, 384px"
-                  className="object-contain object-bottom drop-shadow-2xl motion-safe:animate-float"
+                  className="object-contain object-bottom drop-shadow-[0_25px_35px_rgba(40,34,70,0.35)] motion-safe:animate-float"
                   priority
                 />
               </div>
             </div>
-            <div className="absolute -bottom-2 left-0 w-56 rounded-2xl bg-white p-5 shadow-lg ring-1 ring-slate-100 sm:-left-4">
+            <div className="absolute -bottom-2 left-0 w-56 rounded-2xl border border-white/60 bg-white/70 p-5 shadow-glow-accent backdrop-blur-lg sm:-left-4">
               <p className="text-sm font-semibold text-slate-900">
                 &ldquo;Coxy Clean turns our Airbnb around every single time,
                 spotless.&rdquo;
@@ -161,7 +165,11 @@ export default function HomePage() {
       </section>
 
       <section className="relative mx-auto max-w-6xl px-6 py-24">
-        <Reveal className="text-center">
+        <Reveal className="relative text-center">
+          <div
+            aria-hidden="true"
+            className="absolute left-1/2 top-1/2 -z-10 h-32 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent-300 opacity-20 blur-3xl"
+          />
           <h2 className="font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
             Why State College trusts Coxy Clean
           </h2>
@@ -173,7 +181,7 @@ export default function HomePage() {
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {valueProps.map((item, i) => (
             <Reveal key={item.title} delay={i * 75}>
-              <div className="group h-full rounded-2xl border border-slate-200 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg">
+              <div className="group h-full rounded-2xl border border-slate-200 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-glow-brand">
                 <item.icon className="h-9 w-9 text-brand-600 transition-transform duration-300 group-hover:scale-110" />
                 <h3 className="mt-4 font-display text-lg font-semibold text-slate-900">
                   {item.title}
@@ -184,24 +192,24 @@ export default function HomePage() {
           ))}
         </div>
 
-        <SectionWave fill="#f8fafc" />
+        <SectionWave fill="#1a162e" />
       </section>
 
-      <section className="relative bg-slate-50 py-24">
+      <section className="relative overflow-hidden bg-gradient-to-br from-brand-800 via-brand-700 to-brand-600 py-24">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <h2 className="font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
+              <h2 className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 What we clean
               </h2>
-              <p className="mt-4 max-w-xl text-slate-600">
+              <p className="mt-4 max-w-xl text-white/70">
                 From Airbnb turnovers to full commercial spaces, here&apos;s
                 how we help around State College.
               </p>
             </div>
             <Link
               href="/services"
-              className="text-sm font-semibold text-brand-600 transition-colors hover:text-brand-700"
+              className="text-sm font-semibold text-accent-400 transition-colors hover:text-accent-300"
             >
               See all services &amp; pricing &rarr;
             </Link>
@@ -215,23 +223,23 @@ export default function HomePage() {
               >
                 <Link
                   href={service.href}
-                  className={`group flex h-full flex-col justify-between rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-brand-200 ${
+                  className={`group flex h-full flex-col justify-between rounded-2xl border border-white/15 bg-white/10 p-7 shadow-glow-accent backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.14] hover:shadow-glow-green hover:backdrop-blur-lg ${
                     service.big ? "sm:flex-row sm:items-center sm:gap-8" : ""
                   }`}
                 >
                   <div>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-600 transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300 transition-colors duration-300 group-hover:bg-white/25 group-hover:text-white">
                       <service.icon className="h-6 w-6" />
                     </div>
-                    <h3 className="mt-4 font-display text-xl font-semibold text-slate-900">
+                    <h3 className="mt-4 font-display text-xl font-semibold text-white">
                       {service.title}
                     </h3>
-                    <p className="mt-2 text-sm text-slate-600">
+                    <p className="mt-2 text-sm text-white/70">
                       {service.description}
                     </p>
                   </div>
                   <span
-                    className={`mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-600 transition-transform duration-300 group-hover:translate-x-1 ${
+                    className={`mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent-300 transition-transform duration-300 group-hover:translate-x-1 ${
                       service.big ? "sm:mt-0 sm:flex-shrink-0" : ""
                     }`}
                   >
@@ -248,14 +256,14 @@ export default function HomePage() {
 
       <section className="relative mx-auto max-w-6xl px-6 py-24">
         <Reveal>
-          <div className="relative flex flex-col items-center gap-6 overflow-hidden rounded-3xl bg-brand-600 px-8 py-14 text-center sm:px-16">
+          <div className="relative flex flex-col items-center gap-6 overflow-hidden rounded-3xl bg-brand-600 px-8 py-14 text-center shadow-glow-brand sm:px-16">
             <div
               aria-hidden="true"
-              className="absolute -right-10 -top-10 h-40 w-40 rotate-12 rounded-3xl bg-white/5"
+              className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-3xl"
             />
             <div
               aria-hidden="true"
-              className="absolute -bottom-12 -left-12 h-40 w-40 -rotate-12 rounded-3xl bg-accent-400/10"
+              className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-accent-400/20 blur-3xl"
             />
             <h2 className="relative font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
               Ready for a cleaner space?
@@ -266,7 +274,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/contact"
-              className="relative rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-lg active:translate-y-0"
+              className="btn-shine relative rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-700 shadow-glow-accent transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-glow-green active:translate-y-0"
             >
               Request Your Free Quote
             </Link>

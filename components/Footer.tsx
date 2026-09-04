@@ -6,13 +6,19 @@ export default function Footer() {
     <footer className="border-t border-slate-200 bg-slate-50">
       <div className="mx-auto max-w-6xl px-6 pt-12">
         <div className="flex flex-col items-center gap-6 border-b border-slate-200 pb-10 text-center sm:flex-row sm:text-left">
-          <Image
-            src="/logo-full.png"
-            alt="Coxy Clean — My house is clean cuz it's Coxy Clean"
-            width={1823}
-            height={3060}
-            className="h-44 w-auto flex-shrink-0 sm:h-56 md:h-64"
-          />
+          <div className="relative flex-shrink-0">
+            <div
+              aria-hidden="true"
+              className="absolute inset-4 -z-10 rounded-full bg-accent-300 opacity-25 blur-2xl"
+            />
+            <Image
+              src="/logo-full.png"
+              alt="Coxy Clean — My house is clean cuz it's Coxy Clean"
+              width={1823}
+              height={3060}
+              className="h-44 w-auto sm:h-56 md:h-64"
+            />
+          </div>
           <p className="max-w-sm text-sm text-slate-500">
             Reliable, detail-oriented cleaning for State College, PA and the
             surrounding areas.

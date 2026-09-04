@@ -23,7 +23,7 @@ export default function FloatingBookButton() {
     <Link
       href="/contact"
       aria-label="Book Now — go to contact page"
-      className={`fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-brand-600 px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand-900/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-xl active:translate-y-0 sm:px-6 ${
+      className={`btn-shine fixed bottom-6 right-6 z-40 flex items-center gap-2 rounded-full bg-brand-600 px-5 py-3.5 text-sm font-semibold text-white shadow-glow-brand transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-glow-red active:translate-y-0 sm:px-6 ${
         visible
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-4 opacity-0"

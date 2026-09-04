@@ -83,7 +83,7 @@ export default function AboutPage() {
                   alt="Coxy Clean logo — My house is clean cuz it's Coxy Clean"
                   fill
                   sizes="(min-width: 768px) 380px, 320px"
-                  className="object-contain drop-shadow-2xl"
+                  className="object-contain drop-shadow-[0_25px_35px_rgba(40,34,70,0.35)]"
                 />
               </div>
             </div>
@@ -92,7 +92,11 @@ export default function AboutPage() {
       </div>
 
       <div className="mx-auto max-w-6xl px-6 py-16">
-        <Reveal>
+        <Reveal className="relative">
+          <div
+            aria-hidden="true"
+            className="absolute -left-6 -top-6 -z-10 h-28 w-28 rounded-full bg-brand-300 opacity-20 blur-3xl"
+          />
           <h2 className="font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
             Why choose us
           </h2>
@@ -124,7 +128,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-lg active:translate-y-0"
+              className="btn-shine rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-glow-green active:translate-y-0"
             >
               Get a Free Quote
             </Link>

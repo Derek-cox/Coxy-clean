@@ -9,3 +9,71 @@ html {
 body {
   color: #1e293b;
 }
+
+/* Slow-moving hero background wash: navy/gold/cream, with the faintest
+   whisper of green and red so the Italian-flag heritage still reads
+   without competing with the navy/gold brand palette. */
+.hero-aurora {
+  background-image: linear-gradient(
+    120deg,
+    #282246 0%,
+    #4a4564 18%,
+    #e8b800 36%,
+    #fefbf0 50%,
+    #205c48 62%,
+    #792438 74%,
+    #282246 100%
+  );
+  background-size: 320% 320%;
+  animation: aurora-pan 26s ease-in-out infinite;
+}
+
+@keyframes aurora-pan {
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 60%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
+}
+
+/* Glass-shine hover sweep for solid buttons */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(
+    115deg,
+    transparent,
+    rgba(255, 255, 255, 0.55),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.65s ease;
+  pointer-events: none;
+}
+
+.btn-shine:hover::after {
+  left: 130%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-aurora {
+    animation: none;
+  }
+  .btn-shine::after {
+    transition: none;
+    display: none;
+  }
+}
