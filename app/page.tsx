@@ -133,7 +133,7 @@ export default function HomePage() {
           </Reveal>
 
           <Reveal delay={150} className="relative">
-            <div className="relative mx-auto w-full max-w-sm md:mx-0 md:ml-auto md:w-[112%]">
+            <div className="relative mx-auto w-full max-w-xs md:mx-0 md:ml-auto md:max-w-[420px]">
               <div
                 aria-hidden="true"
                 className="absolute inset-0 -z-10 rounded-full bg-gradient-to-br from-brand-400 via-accent-300 to-brand-500 opacity-40 blur-3xl md:-inset-6"
@@ -143,7 +143,8 @@ export default function HomePage() {
                   src="/mascot.png"
                   alt="Coxy Clean mascot illustration — an Italian-flag-themed cleaner holding a mop and bucket"
                   fill
-                  sizes="(min-width: 768px) 480px, 384px"
+                  sizes="(min-width: 768px) 420px, 320px"
+                  quality={95}
                   className="object-contain object-bottom drop-shadow-[0_25px_35px_rgba(40,34,70,0.35)] motion-safe:animate-float"
                   priority
                 />

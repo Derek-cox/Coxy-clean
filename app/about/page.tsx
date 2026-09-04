@@ -86,6 +86,7 @@ export default function AboutPage() {
                   alt="Coxy Clean logo — My house is clean cuz it's Coxy Clean"
                   fill
                   sizes="(min-width: 768px) 380px, 320px"
+                  quality={95}
                   className="object-contain drop-shadow-[0_25px_35px_rgba(40,34,70,0.35)]"
                 />
               </div>

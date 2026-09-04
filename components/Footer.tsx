@@ -16,6 +16,7 @@ export default function Footer() {
               alt="Coxy Clean — My house is clean cuz it's Coxy Clean"
               width={1823}
               height={3060}
+              quality={95}
               className="h-44 w-auto sm:h-56 md:h-64"
             />
           </div>
