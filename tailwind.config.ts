@@ -35,7 +35,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
-        display: ["var(--font-display)", "Georgia", "serif"],
+        display: ["var(--font-display)", "Cambria", "Georgia", "serif"],
       },
       boxShadow: {
         "glow-brand": "0 0 36px -6px rgba(40,34,70,0.5)",

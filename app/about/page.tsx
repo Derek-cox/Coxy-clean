@@ -53,16 +53,16 @@ export default function AboutPage() {
       <div className="mx-auto max-w-6xl px-6 pb-8 pt-16 sm:pt-20">
         <div className="grid items-center gap-16 md:grid-cols-2">
           <Reveal>
-            <h1 className="font-display text-5xl font-semibold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl">
+            <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl">
               About Coxy Clean
             </h1>
-            <p className="mt-6 text-lg text-slate-600">
+            <p className="mt-6 text-lg text-slate-600 leading-relaxed">
               Coxy Clean is a family-owned and locally operated cleaning
               company built around one simple idea: everyone in State
               College deserves a reliably clean space, delivered by a team
               you can trust.
             </p>
-            <p className="mt-4 text-slate-600">
+            <p className="mt-4 text-slate-600 leading-relaxed">
               We started Coxy Clean to bring hotel-level attention to detail
               to everyday homes, Airbnb rentals, and local businesses —
               without the high price tag or scheduling headaches. Today
@@ -97,7 +97,7 @@ export default function AboutPage() {
             aria-hidden="true"
             className="absolute -left-6 -top-6 -z-10 h-28 w-28 rounded-full bg-brand-300 opacity-20 blur-3xl"
           />
-          <h2 className="font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Why choose us
           </h2>
         </Reveal>
@@ -106,7 +106,7 @@ export default function AboutPage() {
             <Reveal key={reason.title} delay={i * 75}>
               <div className="group">
                 <reason.icon className="h-8 w-8 text-brand-600 transition-transform duration-300 group-hover:scale-110" />
-                <h3 className="mt-3 font-display text-lg font-semibold text-slate-900">
+                <h3 className="mt-3 font-display text-lg font-bold text-slate-900">
                   {reason.title}
                 </h3>
                 <p className="mt-2 text-sm text-slate-600">{reason.description}</p>
@@ -119,7 +119,7 @@ export default function AboutPage() {
       <div className="mx-auto max-w-6xl px-6 pb-24">
         <Reveal>
           <div className="flex flex-col items-center gap-6 rounded-3xl bg-slate-50 px-8 py-14 text-center">
-            <h2 className="font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
               Let&apos;s get your space looking its best
             </h2>
             <p className="max-w-xl text-slate-600">

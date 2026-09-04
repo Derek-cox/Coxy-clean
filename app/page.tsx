@@ -89,14 +89,14 @@ export default function HomePage() {
             <span className="inline-flex items-center rounded-full bg-brand-100 px-4 py-1 text-sm font-medium text-brand-700">
               Serving State College, PA &amp; the surrounding area
             </span>
-            <h1 className="mt-6 font-display text-6xl font-semibold leading-[1.02] tracking-tight text-slate-900 sm:text-7xl lg:text-[5rem]">
+            <h1 className="mt-6 font-display text-6xl font-black leading-[1.02] tracking-tight text-slate-900 sm:text-7xl lg:text-[5rem]">
               A spotless
               <br />
               space, without
               <br />
               lifting a finger.
             </h1>
-            <p className="mt-7 max-w-md text-lg text-slate-600">
+            <p className="mt-7 max-w-md text-lg text-slate-600 leading-relaxed">
               Coxy Clean brings reliable, detail-driven cleaning to homes,
               rentals, and businesses throughout State College. Book in
               minutes and get your time back.
@@ -117,14 +117,14 @@ export default function HomePage() {
             </div>
             <div className="mt-10 flex items-center gap-6 text-sm text-slate-500">
               <div>
-                <p className="font-display text-2xl font-semibold text-slate-900">
+                <p className="font-display text-2xl font-bold text-slate-900">
                   Family-Owned
                 </p>
                 <p>Locally operated in State College</p>
               </div>
               <div className="h-10 w-px bg-slate-200" />
               <div>
-                <p className="font-display text-2xl font-semibold text-slate-900">
+                <p className="font-display text-2xl font-bold text-slate-900">
                   Fully Insured
                 </p>
                 <p>For your peace of mind</p>
@@ -170,7 +170,7 @@ export default function HomePage() {
             aria-hidden="true"
             className="absolute left-1/2 top-1/2 -z-10 h-32 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent-300 opacity-20 blur-3xl"
           />
-          <h2 className="font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
+          <h2 className="font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
             Why State College trusts Coxy Clean
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-slate-600">
@@ -183,7 +183,7 @@ export default function HomePage() {
             <Reveal key={item.title} delay={i * 75}>
               <div className="group h-full rounded-2xl border border-slate-200 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-glow-brand">
                 <item.icon className="h-9 w-9 text-brand-600 transition-transform duration-300 group-hover:scale-110" />
-                <h3 className="mt-4 font-display text-lg font-semibold text-slate-900">
+                <h3 className="mt-4 font-display text-lg font-bold text-slate-900">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm text-slate-600">{item.description}</p>
@@ -199,7 +199,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6">
           <Reveal className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <h2 className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              <h2 className="font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
                 What we clean
               </h2>
               <p className="mt-4 max-w-xl text-white/70">
@@ -231,7 +231,7 @@ export default function HomePage() {
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300 transition-colors duration-300 group-hover:bg-white/25 group-hover:text-white">
                       <service.icon className="h-6 w-6" />
                     </div>
-                    <h3 className="mt-4 font-display text-xl font-semibold text-white">
+                    <h3 className="mt-4 font-display text-xl font-bold text-white">
                       {service.title}
                     </h3>
                     <p className="mt-2 text-sm text-white/70">
@@ -265,7 +265,7 @@ export default function HomePage() {
               aria-hidden="true"
               className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-accent-400/20 blur-3xl"
             />
-            <h2 className="relative font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+            <h2 className="relative font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
               Ready for a cleaner space?
             </h2>
             <p className="relative max-w-xl text-white/70">

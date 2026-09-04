@@ -39,10 +39,10 @@ export default function HiringPage() {
         <span className="inline-flex items-center rounded-full bg-accent-100 px-4 py-1 text-sm font-medium text-accent-700">
           We&apos;re Hiring
         </span>
-        <h1 className="mt-6 font-display text-5xl font-semibold tracking-tight text-slate-900 sm:text-6xl">
+        <h1 className="mt-6 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
           Join the Coxy Clean team
         </h1>
-        <p className="mt-5 text-lg text-slate-600">
+        <p className="mt-5 text-lg text-slate-600 leading-relaxed">
           We&apos;re looking for reliable, detail-oriented people to join our
           growing cleaning team in State College. No experience required —
           just a strong work ethic and attention to detail.
@@ -54,7 +54,7 @@ export default function HiringPage() {
           <Reveal key={perk.title} delay={i * 75}>
             <div className="group h-full rounded-2xl border border-slate-200 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-200 hover:shadow-lg">
               <perk.icon className="h-8 w-8 text-accent-700 transition-transform duration-300 group-hover:scale-110" />
-              <h3 className="mt-4 font-display text-lg font-semibold text-slate-900">
+              <h3 className="mt-4 font-display text-lg font-bold text-slate-900">
                 {perk.title}
               </h3>
               <p className="mt-2 text-sm text-slate-600">{perk.description}</p>
@@ -65,10 +65,10 @@ export default function HiringPage() {
 
       <div className="mt-16 grid gap-12 md:grid-cols-5">
         <Reveal className="md:col-span-2">
-          <h2 className="font-display text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+          <h2 className="font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
             Apply now
           </h2>
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-slate-600 leading-relaxed">
             Fill out the quick application below and we&apos;ll be in touch
             about next steps. You can also email your resume directly.
           </p>

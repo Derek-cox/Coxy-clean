@@ -21,7 +21,7 @@ export default function Navbar() {
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-white font-bold">
             C
           </span>
-          <span className="font-display text-xl font-semibold tracking-tight text-slate-900">
+          <span className="font-display text-xl font-bold tracking-tight text-slate-900">
             Coxy Clean
           </span>
         </Link>
