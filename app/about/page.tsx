@@ -19,30 +19,27 @@ export const metadata: Metadata = {
 const reasons = [
   {
     title: "Family-Owned & Local",
-    description:
-      "Family-owned and locally operated right here in State College.",
+    description: "Locally operated, right here in State College.",
     icon: HomeHeartIcon,
   },
   {
     title: "Fully Insured",
-    description: "We're fully insured for your peace of mind.",
+    description: "Fully insured for your peace of mind.",
     icon: ShieldIcon,
   },
   {
     title: "Trustworthy & Honest",
-    description: "Honest, trustworthy service you can count on, every visit.",
+    description: "Honest, reliable service, every time.",
     icon: HandshakeIcon,
   },
   {
     title: "Direct Line to the Owner",
-    description:
-      "Talk directly with the owner — clear, direct communication, no middlemen.",
+    description: "Talk directly with the owner — no middlemen.",
     icon: ChatIcon,
   },
   {
     title: "Detail-Driven Process",
-    description:
-      "A thorough, detail-driven cleaning process for every job, every time.",
+    description: "A thorough process for every job, every time.",
     icon: SparkleChecklistIcon,
   },
 ];
@@ -60,17 +57,10 @@ export default function AboutPage() {
               About Coxy Clean
             </h1>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-              Coxy Clean is a family-owned and locally operated cleaning
-              company built around one simple idea: everyone in State
-              College deserves a reliably clean space, delivered by a team
-              you can trust.
-            </p>
-            <p className="mt-4 text-slate-600 leading-relaxed">
-              We started Coxy Clean to bring hotel-level attention to detail
-              to everyday homes, Airbnb rentals, and local businesses —
-              without the high price tag or scheduling headaches. Today
-              we&apos;re proud to serve homeowners, landlords, hosts, and
-              businesses across State College and the surrounding area.
+              Family-owned and locally operated, bringing hotel-level
+              attention to detail to homes, Airbnb rentals, and local
+              businesses across State College — no high price tag, no
+              scheduling headaches.
             </p>
           </Reveal>
 
@@ -87,7 +77,7 @@ export default function AboutPage() {
                   fill
                   sizes="(min-width: 768px) 380px, 320px"
                   quality={95}
-                  className="object-contain drop-shadow-[0_25px_35px_rgba(40,34,70,0.35)]"
+                  className="object-contain drop-shadow-[0_25px_35px_rgba(2,132,199,0.3)]"
                 />
               </div>
             </div>
@@ -130,8 +120,7 @@ export default function AboutPage() {
               Let&apos;s get your space looking its best
             </h2>
             <p className="max-w-xl text-slate-600">
-              Reach out today for a free quote — we typically respond within
-              one business day.
+              Free quotes, usually within one business day.
             </p>
             <Link
               href="/contact"

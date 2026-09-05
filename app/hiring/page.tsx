@@ -43,9 +43,7 @@ export default function HiringPage() {
           Join the Coxy Clean team
         </h1>
         <p className="mt-5 text-lg text-slate-600 leading-relaxed">
-          We&apos;re looking for reliable, detail-oriented people to join our
-          growing cleaning team in State College. No experience required —
-          just a strong work ethic and attention to detail.
+          Reliable, detail-oriented people wanted. No experience required.
         </p>
       </Reveal>
 
@@ -72,8 +70,7 @@ export default function HiringPage() {
             Apply now
           </h2>
           <p className="mt-4 text-slate-600 leading-relaxed">
-            Fill out the quick application below and we&apos;ll be in touch
-            about next steps. You can also email your resume directly.
+            Apply below, or email your resume directly.
           </p>
           <div className="mt-6">
             <h3 className="text-sm font-semibold text-slate-900">Email</h3>

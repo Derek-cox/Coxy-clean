@@ -18,8 +18,7 @@ const services = [
   {
     name: "Airbnb Turnover Cleaning",
     icon: MopBucketIcon,
-    description:
-      "Fast, reliable cleans between guest stays so your listing is spotless and photo-ready for the next check-in.",
+    description: "Fast cleans between guest stays, so your listing is always ready.",
     includes: [
       "Full clean of all rooms & bathrooms",
       "Fresh linens & towel restaging",
@@ -30,8 +29,7 @@ const services = [
   {
     name: "Residential Cleaning",
     icon: HomeHeartIcon,
-    description:
-      "One-time deep cleans or recurring weekly, biweekly, and monthly service for homes across State College.",
+    description: "One-time or recurring cleans for homes across State College.",
     includes: [
       "Kitchens, bathrooms, bedrooms & living areas",
       "Dusting, vacuuming & mopping",
@@ -42,8 +40,7 @@ const services = [
   {
     name: "Commercial Cleaning",
     icon: BuildingIcon,
-    description:
-      "Scheduled cleaning for offices, retail spaces, and small businesses, before or after hours to fit your operations.",
+    description: "Scheduled cleaning for offices and retail, on your hours.",
     includes: [
       "Flexible daily, weekly, or monthly plans",
       "Common areas, restrooms & workspaces",
@@ -106,13 +103,11 @@ export default function ServicesPage() {
           Services &amp; Pricing
         </h1>
         <p className="mt-5 text-lg text-slate-600 leading-relaxed">
-          Every space is different, so every quote is custom. Reach out and
-          we&apos;ll put together a price based on your space and what you
-          need done.
+          Every space is different, so every quote is custom.
         </p>
       </Reveal>
 
-      <div className="relative mt-14 overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-brand-800 via-brand-700 to-brand-600 p-6 shadow-glow-brand sm:p-10 md:p-14">
+      <div className="relative mt-14 overflow-hidden rounded-[2.5rem] bg-brand-800 p-6 shadow-glow-brand sm:p-10 md:p-14">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-accent-400/10 blur-3xl"
@@ -132,7 +127,7 @@ export default function ServicesPage() {
                 <h2 className="mt-4 font-display text-xl font-bold text-white">
                   {service.name}
                 </h2>
-                <p className="mt-2 text-sm font-semibold text-accent-300">
+                <p className="mt-2 text-sm font-semibold text-accent-200">
                   Custom quote based on your space
                 </p>
                 <p className="mt-4 text-sm text-white/70">{service.description}</p>
@@ -146,7 +141,7 @@ export default function ServicesPage() {
                 </ul>
                 <Link
                   href="/contact"
-                  className="mt-8 inline-flex w-fit items-center gap-1 text-sm font-semibold text-accent-300 transition-transform duration-300 hover:translate-x-1 hover:text-accent-200"
+                  className="mt-8 inline-flex w-fit items-center gap-1 text-sm font-semibold text-accent-200 transition-transform duration-300 hover:translate-x-1 hover:text-accent-100"
                 >
                   Get a Quote &rarr;
                 </Link>
@@ -162,16 +157,15 @@ export default function ServicesPage() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300">
                   <SparkleChecklistIcon className="h-6 w-6" />
                 </div>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent-400">
+                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent-200">
                   Featured Service
                 </p>
                 <h2 className="mt-2 font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
                   Move-In / Move-Out / First-Time Deep Clean
                 </h2>
                 <p className="mt-3 max-w-2xl text-white/70">
-                  A thorough, top-to-bottom deep clean for tenants, landlords,
-                  students, and homeowners moving in or out of a property —
-                  or anyone booking us for the first time.
+                  A thorough, top-to-bottom clean for move-ins, move-outs, or
+                  your first booking with us.
                 </p>
               </div>
               <div className="rounded-2xl bg-white/95 px-6 py-4 shadow-lg">
@@ -224,8 +218,8 @@ export default function ServicesPage() {
       </div>
 
       <p className="mt-10 text-sm text-slate-500">
-        All pricing is customized to your space and needs. Contact us for an
-        exact quote — most requests get a response within one business day.
+        Contact us for an exact quote — most requests get a response within
+        one business day.
       </p>
     </div>
   );

@@ -16,30 +16,27 @@ import {
 const valueProps = [
   {
     title: "Family-Owned & Local",
-    description:
-      "Family-owned and locally operated right here in State College.",
+    description: "Locally operated, right here in State College.",
     icon: HomeHeartIcon,
   },
   {
     title: "Fully Insured",
-    description: "We're fully insured for your peace of mind.",
+    description: "Fully insured for your peace of mind.",
     icon: ShieldIcon,
   },
   {
     title: "Trustworthy & Honest",
-    description: "Honest, trustworthy service you can count on, every visit.",
+    description: "Honest, reliable service, every time.",
     icon: HandshakeIcon,
   },
   {
     title: "Direct Line to the Owner",
-    description:
-      "Talk directly with the owner — clear, direct communication, no middlemen.",
+    description: "Talk directly with the owner — no middlemen.",
     icon: ChatIcon,
   },
   {
     title: "Detail-Driven Process",
-    description:
-      "A thorough, detail-driven cleaning process for every job, every time.",
+    description: "A thorough process for every job, every time.",
     icon: SparkleChecklistIcon,
   },
 ];
@@ -47,8 +44,7 @@ const valueProps = [
 const services = [
   {
     title: "Airbnb Turnover",
-    description:
-      "Fast, reliable turnovers between guests so your listing stays five-star ready.",
+    description: "Fast turnovers so your listing stays five-star ready.",
     href: "/services",
     icon: MopBucketIcon,
   },
@@ -93,9 +89,8 @@ export default function HomePage() {
               lifting a finger.
             </h1>
             <p className="mt-7 max-w-md text-lg text-slate-600 leading-relaxed">
-              Coxy Clean brings reliable, detail-driven cleaning to homes,
-              rentals, and businesses throughout State College. Book in
-              minutes and get your time back.
+              Reliable, detail-driven cleaning for homes, rentals, and
+              businesses in State College.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
@@ -141,7 +136,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 768px) 420px, 320px"
                   quality={95}
-                  className="object-contain object-bottom drop-shadow-[0_25px_35px_rgba(40,34,70,0.35)] motion-safe:animate-float"
+                  className="object-contain object-bottom drop-shadow-[0_25px_35px_rgba(2,132,199,0.3)] motion-safe:animate-float"
                   priority
                 />
               </div>
@@ -174,8 +169,7 @@ export default function HomePage() {
             Why State College trusts Coxy Clean
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-slate-600">
-            We treat every job — from a single studio to a full commercial
-            space — with the same care and attention to detail.
+            Every job gets the same care, studio to commercial.
           </p>
         </Reveal>
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -192,27 +186,26 @@ export default function HomePage() {
           ))}
         </div>
 
-        <SectionWave fill="#1a162e" />
+        <SectionWave fill="#015783" />
       </section>
 
-      <section className="relative overflow-hidden bg-gradient-to-br from-brand-800 via-brand-700 to-brand-600 py-24">
+      <section className="relative overflow-hidden bg-brand-800 py-24">
         <div className="mx-auto max-w-6xl px-6">
           <Reveal className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-400">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-200">
                 Our Services
               </p>
               <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
                 What we clean
               </h2>
               <p className="mt-4 max-w-xl text-white/70">
-                From Airbnb turnovers to full commercial spaces, here&apos;s
-                how we help around State College.
+                Airbnb turnovers to commercial spaces, covered.
               </p>
             </div>
             <Link
               href="/services"
-              className="text-sm font-semibold text-accent-400 transition-colors hover:text-accent-300"
+              className="text-sm font-semibold text-accent-200 transition-colors hover:text-accent-100"
             >
               See all services &amp; pricing &rarr;
             </Link>
@@ -233,7 +226,7 @@ export default function HomePage() {
                   <p className="mt-2 text-sm text-white/70">
                     {service.description}
                   </p>
-                  <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-accent-300 transition-transform duration-300 group-hover:translate-x-1">
+                  <span className="mt-auto inline-flex items-center gap-1 pt-4 text-sm font-semibold text-accent-200 transition-transform duration-300 group-hover:translate-x-1">
                     Learn more &rarr;
                   </span>
                 </Link>
@@ -247,7 +240,7 @@ export default function HomePage() {
 
       <section className="relative mx-auto max-w-6xl px-6 py-24">
         <Reveal>
-          <div className="relative flex flex-col items-center gap-6 overflow-hidden rounded-3xl bg-brand-600 px-8 py-14 text-center shadow-glow-brand sm:px-16">
+          <div className="relative flex flex-col items-center gap-6 overflow-hidden rounded-3xl bg-brand-800 px-8 py-14 text-center shadow-glow-brand sm:px-16">
             <div
               aria-hidden="true"
               className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-white/10 blur-3xl"
@@ -257,7 +250,7 @@ export default function HomePage() {
               className="absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-accent-400/20 blur-3xl"
             />
             <div className="relative">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-300">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-200">
                 Get Started
               </p>
               <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-white sm:text-5xl">
@@ -265,8 +258,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="relative max-w-xl text-white/70">
-              Get a free, no-obligation quote for your home, rental, or
-              business in State College — usually within one business day.
+              Free quotes, usually within one business day.
             </p>
             <Link
               href="/contact"

@@ -20,8 +20,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="mt-5 text-slate-600 leading-relaxed">
-            Fill out the form and we&apos;ll send you a free quote — usually
-            within one business day. Prefer to talk? Give us a call.
+            Free quote, usually within one business day — or give us a call.
           </p>
 
           <div className="mt-8 space-y-6">
