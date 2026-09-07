@@ -4,9 +4,9 @@ import Reveal from "@/components/Reveal";
 import { ClockIcon, CoinIcon, HandshakeIcon, MapPinIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "We're Hiring | Coxy Clean",
+  title: "We're Hiring | CoxyClean",
   description:
-    "Coxy Clean is hiring reliable, detail-oriented cleaners in State College, PA. Flexible hours, competitive pay. Apply today.",
+    "CoxyClean is hiring reliable, detail-oriented cleaners in State College, PA. Flexible hours, competitive pay. Apply today.",
 };
 
 const perks = [
@@ -40,7 +40,7 @@ export default function HiringPage() {
           We&apos;re Hiring
         </span>
         <h1 className="mt-6 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
-          Join the Coxy Clean team
+          Join the CoxyClean team
         </h1>
         <p className="mt-5 text-lg text-slate-600 leading-relaxed">
           Reliable, detail-oriented people wanted. No experience required.

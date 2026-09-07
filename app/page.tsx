@@ -132,7 +132,7 @@ export default function HomePage() {
               <div className="relative aspect-[639/893] w-full -rotate-2">
                 <Image
                   src="/mascot.png"
-                  alt="Coxy Clean mascot illustration — an Italian-flag-themed cleaner holding a mop and bucket"
+                  alt="CoxyClean mascot illustration — an Italian-flag-themed cleaner holding a mop and bucket"
                   fill
                   sizes="(min-width: 768px) 420px, 320px"
                   quality={95}
@@ -143,7 +143,7 @@ export default function HomePage() {
             </div>
             <div className="absolute -bottom-2 left-0 w-56 rounded-2xl border border-white/60 bg-white/70 p-5 shadow-glow-accent backdrop-blur-lg sm:-left-4">
               <p className="text-sm font-semibold text-slate-900">
-                &ldquo;Coxy Clean turns our Airbnb around every single time,
+                &ldquo;CoxyClean turns our Airbnb around every single time,
                 spotless.&rdquo;
               </p>
               <p className="mt-2 text-xs text-slate-500">
@@ -166,7 +166,7 @@ export default function HomePage() {
             Trust &amp; Reliability
           </p>
           <h2 className="mt-3 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-            Why State College trusts Coxy Clean
+            Why State College trusts CoxyClean
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-slate-600">
             Every job gets the same care, studio to commercial.

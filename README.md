@@ -1,6 +1,6 @@
-# Coxy Clean
+# CoxyClean
 
-Marketing site for Coxy Clean, a cleaning business in State College, PA. Built with Next.js (App Router), TypeScript, and Tailwind CSS.
+Marketing site for CoxyClean, a cleaning business in State College, PA. Built with Next.js (App Router), TypeScript, and Tailwind CSS.
 
 ## Pages
 

@@ -3,9 +3,9 @@ import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Coxy Clean",
+  title: "Contact Us | CoxyClean",
   description:
-    "Get a free cleaning quote from Coxy Clean in State College, PA. We typically respond within one business day.",
+    "Get a free cleaning quote from CoxyClean in State College, PA. We typically respond within one business day.",
 };
 
 export default function ContactPage() {

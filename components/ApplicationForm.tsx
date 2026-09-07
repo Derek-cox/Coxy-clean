@@ -43,7 +43,7 @@ export default function ApplicationForm() {
           Application received!
         </h3>
         <p className="mt-2 text-sm text-brand-700">
-          Thanks for your interest in joining Coxy Clean. We&apos;ll review
+          Thanks for your interest in joining CoxyClean. We&apos;ll review
           your application and reach out if it&apos;s a good fit.
         </p>
       </div>

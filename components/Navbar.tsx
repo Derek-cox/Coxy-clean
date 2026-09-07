@@ -19,7 +19,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between border-b border-slate-200 px-6 py-4">
         <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <span className="font-display text-xl font-bold tracking-tight text-slate-900">
-            Coxy Clean
+            CoxyClean
           </span>
         </Link>
 

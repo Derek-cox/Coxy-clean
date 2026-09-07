@@ -13,7 +13,7 @@ export default function Footer() {
             />
             <Image
               src="/logo-full.png"
-              alt="Coxy Clean — My house is clean cuz it's Coxy Clean"
+              alt="CoxyClean — My house is clean cuz it's CoxyClean"
               width={1823}
               height={3060}
               quality={95}
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-slate-200 py-6 text-center text-xs text-slate-400">
-        &copy; {new Date().getFullYear()} Coxy Clean. All rights reserved.
+        &copy; {new Date().getFullYear()} CoxyClean. All rights reserved.
       </div>
     </footer>
   );

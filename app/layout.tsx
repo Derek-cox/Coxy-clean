@@ -13,9 +13,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Coxy Clean | Professional Cleaning in State College, PA",
+  title: "CoxyClean | Professional Cleaning in State College, PA",
   description:
-    "Coxy Clean provides Airbnb turnover, residential, commercial, and move-out cleaning in State College, PA and the surrounding area. Book your free quote today.",
+    "CoxyClean provides Airbnb turnover, residential, commercial, and move-out cleaning in State College, PA and the surrounding area. Book your free quote today.",
 };
 
 export default function RootLayout({

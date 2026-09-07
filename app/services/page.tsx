@@ -9,7 +9,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Services & Pricing | Coxy Clean",
+  title: "Services & Pricing | CoxyClean",
   description:
     "Airbnb turnover, residential, commercial, and move-in/move-out cleaning in State College, PA. Custom quotes based on your space.",
 };

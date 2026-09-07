@@ -11,9 +11,9 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "About Us | Coxy Clean",
+  title: "About Us | CoxyClean",
   description:
-    "Coxy Clean is a family-owned cleaning company serving State College, PA. Learn why homeowners, hosts, and businesses choose us.",
+    "CoxyClean is a family-owned cleaning company serving State College, PA. Learn why homeowners, hosts, and businesses choose us.",
 };
 
 const reasons = [
@@ -54,7 +54,7 @@ export default function AboutPage() {
               About Us
             </p>
             <h1 className="mt-3 font-display text-5xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl">
-              About Coxy Clean
+              About CoxyClean
             </h1>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">
               Family-owned and locally operated, bringing hotel-level
@@ -73,7 +73,7 @@ export default function AboutPage() {
               <div className="relative aspect-[1823/3060] w-full">
                 <Image
                   src="/logo-full.png"
-                  alt="Coxy Clean logo — My house is clean cuz it's Coxy Clean"
+                  alt="CoxyClean logo — My house is clean cuz it's CoxyClean"
                   fill
                   sizes="(min-width: 768px) 380px, 320px"
                   quality={95}
@@ -92,7 +92,7 @@ export default function AboutPage() {
             className="absolute -left-6 -top-6 -z-10 h-28 w-28 rounded-full bg-brand-300 opacity-20 blur-3xl"
           />
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
-            The Coxy Clean Difference
+            The CoxyClean Difference
           </p>
           <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Why choose us
