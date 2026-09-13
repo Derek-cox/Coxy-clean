@@ -77,7 +77,7 @@ export default function AboutPage() {
                   fill
                   sizes="(min-width: 768px) 380px, 320px"
                   quality={95}
-                  className="object-contain drop-shadow-[0_25px_35px_rgba(20,30,56,0.28)]"
+                  className="object-contain drop-shadow-[0_25px_35px_rgba(3,43,24,0.3)]"
                 />
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="btn-shine rounded-full bg-brand-800 px-6 py-3 text-sm font-bold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-gold active:translate-y-0"
+              className="btn-shine rounded-full bg-brand-800 px-6 py-3 text-sm font-bold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-accent active:translate-y-0"
             >
               Get a Free Quote
             </Link>

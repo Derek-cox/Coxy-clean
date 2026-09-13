@@ -120,28 +120,28 @@ export default function ServicesPage() {
         <div className="relative grid gap-6 md:grid-cols-3">
           {services.map((service, i) => (
             <Reveal key={service.name} delay={i * 75}>
-              <div className="group flex h-full flex-col rounded-2xl border border-white/15 bg-white/10 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.14] hover:shadow-glow-gold hover:backdrop-blur-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300 transition-colors duration-300 group-hover:bg-white/25 group-hover:text-white">
+              <div className="group flex h-full flex-col rounded-2xl border border-white/15 bg-white/10 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.14] hover:shadow-glow-accent hover:backdrop-blur-lg">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-brand-100 transition-colors duration-300 group-hover:bg-white/25 group-hover:text-white">
                   <service.icon className="h-6 w-6" />
                 </div>
                 <h2 className="mt-4 font-display text-xl font-bold text-white">
                   {service.name}
                 </h2>
-                <p className="mt-2 text-sm font-semibold text-accent-200">
+                <p className="mt-2 text-sm font-semibold text-brand-200">
                   Custom quote based on your space
                 </p>
                 <p className="mt-4 text-sm text-white/70">{service.description}</p>
                 <ul className="mt-6 space-y-2 text-sm text-white/70">
                   {service.includes.map((item) => (
                     <li key={item} className="flex items-start gap-2">
-                      <CheckIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-300" />
+                      <CheckIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-brand-200" />
                       {item}
                     </li>
                   ))}
                 </ul>
                 <Link
                   href="/contact"
-                  className="mt-8 inline-flex w-fit items-center gap-1 text-sm font-semibold text-accent-200 transition-transform duration-300 hover:translate-x-1 hover:text-accent-100"
+                  className="mt-8 inline-flex w-fit items-center gap-1 text-sm font-semibold text-brand-200 transition-transform duration-300 hover:translate-x-1 hover:text-white"
                 >
                   Get a Quote &rarr;
                 </Link>
@@ -154,10 +154,10 @@ export default function ServicesPage() {
           <div className="rounded-3xl border border-white/15 bg-white/10 p-8 backdrop-blur-md sm:p-10">
             <div className="flex flex-wrap items-start justify-between gap-6">
               <div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-brand-100">
                   <SparkleChecklistIcon className="h-6 w-6" />
                 </div>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent-200">
+                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-brand-200">
                   Featured Service
                 </p>
                 <h2 className="mt-2 font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
@@ -192,7 +192,7 @@ export default function ServicesPage() {
                 <ul className="mt-4 space-y-2 text-sm text-white/70">
                   {moveCleanIncluded.map((item) => (
                     <li key={item} className="flex items-start gap-2">
-                      <CheckIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent-300" />
+                      <CheckIcon className="mt-0.5 h-4 w-4 flex-shrink-0 text-brand-200" />
                       {item}
                     </li>
                   ))}
@@ -215,7 +215,7 @@ export default function ServicesPage() {
 
             <Link
               href="/contact"
-              className="btn-shine mt-8 inline-flex w-fit items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-glow-gold active:translate-y-0"
+              className="btn-shine mt-8 inline-flex w-fit items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-glow-accent active:translate-y-0"
             >
               Get a Quote
             </Link>

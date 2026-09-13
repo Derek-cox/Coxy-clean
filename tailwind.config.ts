@@ -9,32 +9,34 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Navy, pulled from the mascot's leggings in logo-full.png.
+        // Italian flag green (#008C45 at 600) — the primary. Carries
+        // buttons, links, icon accents, dark sections, and heading ink.
         brand: {
-          50: "#f2f5fa",
-          100: "#e3e9f4",
-          200: "#c4d0e6",
-          300: "#9aadd3",
-          400: "#6a83b8",
-          500: "#47609c",
-          600: "#334a80",
-          700: "#283a66",
-          800: "#1d2b4d",
-          900: "#141e38",
-          950: "#0c1425",
+          50: "#edf7f1",
+          100: "#d4ecdf",
+          200: "#a9d9bf",
+          300: "#75c199",
+          400: "#42a673",
+          500: "#1a8f57",
+          600: "#008c45",
+          700: "#00713a",
+          800: "#045c31",
+          900: "#064a29",
+          950: "#032b18",
         },
-        // Gold, pulled from the mascot's gloves and apron.
+        // Italian flag red (#CD212A at 600) — the supporting accent. Used
+        // in small doses: eyebrows, badges, stars, and CTAs on green.
         accent: {
-          50: "#fdf9ec",
-          100: "#faf0cd",
-          200: "#f4df97",
-          300: "#edc95a",
-          400: "#e7b42e",
-          500: "#d99d17",
-          600: "#bd7d12",
-          700: "#975c13",
-          800: "#7c4a17",
-          900: "#683e18",
+          50: "#fdf3f3",
+          100: "#fbe3e4",
+          200: "#f6c5c8",
+          300: "#ef989e",
+          400: "#e5636b",
+          500: "#d93b45",
+          600: "#cd212a",
+          700: "#ac1a22",
+          800: "#8d181e",
+          900: "#76181d",
         },
       },
       fontFamily: {
@@ -42,10 +44,10 @@ const config: Config = {
         display: ["var(--font-display)", "Cambria", "Georgia", "serif"],
       },
       boxShadow: {
-        "glow-brand": "0 18px 40px -18px rgba(29,43,77,0.55)",
-        "glow-gold": "0 18px 40px -16px rgba(231,180,46,0.55)",
-        lift: "0 22px 45px -22px rgba(20,30,56,0.45)",
-        tile: "0 2px 10px -4px rgba(20,30,56,0.18)",
+        "glow-brand": "0 18px 40px -18px rgba(4,92,49,0.55)",
+        "glow-accent": "0 18px 40px -16px rgba(205,33,42,0.45)",
+        lift: "0 22px 45px -22px rgba(3,43,24,0.42)",
+        tile: "0 2px 10px -4px rgba(3,43,24,0.18)",
       },
       keyframes: {
         float: {

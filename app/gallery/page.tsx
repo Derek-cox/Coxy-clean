@@ -23,7 +23,7 @@ export default function GalleryPage() {
         />
         <div className="relative mx-auto max-w-3xl px-6 text-center">
           <Reveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-300">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-200">
               Our Work
             </p>
             <h1 className="mt-3 font-display text-5xl font-black leading-[1.05] tracking-tight text-white sm:text-6xl">
@@ -56,7 +56,7 @@ export default function GalleryPage() {
             </p>
             <Link
               href="/contact"
-              className="btn-shine relative mt-8 inline-flex rounded-full bg-accent-400 px-7 py-3.5 text-sm font-bold text-brand-900 shadow-glow-gold transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-300 active:translate-y-0"
+              className="btn-shine relative mt-8 inline-flex rounded-full bg-accent-600 px-7 py-3.5 text-sm font-bold text-white shadow-glow-accent transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-700 active:translate-y-0"
             >
               Get a Free Quote
             </Link>

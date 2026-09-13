@@ -35,9 +35,17 @@ soon" state rather than invented testimonials.
 
 ### Colors — `tailwind.config.ts`
 
-The whole site is built on two token scales, `brand` (navy) and `accent`
-(gold), both sampled from the logo. Changing the palette means editing that
-one file — no component changes needed.
+The site follows the logo's Italian flag palette. Two token scales carry
+it: `brand` is the green (#008C45 at `brand-600`) and takes the primary
+role — buttons, links, icon accents, dark sections, heading ink. `accent`
+is the red (#CD212A at `accent-600`) and is deliberately used in small
+doses — eyebrow kickers, badges, stars, and the CTA on green panels.
+White is the third flag color and does the work of the neutral ground.
+
+Red is kept sparse on purpose: green and red in equal amounts reads as
+Christmas, so large fields stay green or white and red supplies the
+punctuation. Changing the palette means editing `tailwind.config.ts` and
+nothing else.
 
 ## Getting started locally
 

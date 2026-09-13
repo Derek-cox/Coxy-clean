@@ -35,14 +35,14 @@ export default function Navbar() {
   return (
     <header
       className={`sticky top-0 z-50 bg-white/90 backdrop-blur transition-shadow duration-300 ${
-        scrolled ? "shadow-[0_1px_16px_-6px_rgba(20,30,56,0.25)]" : ""
+        scrolled ? "shadow-[0_1px_16px_-6px_rgba(3,43,24,0.25)]" : ""
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between border-b border-slate-200/80 px-6 py-4">
         <Link href="/" className="group flex items-center gap-2.5">
           <span
             aria-hidden="true"
-            className="h-6 w-1.5 rounded-full bg-accent-400 transition-all duration-300 group-hover:h-7"
+            className="h-6 w-1.5 rounded-full bg-accent-600 transition-all duration-300 group-hover:h-7"
           />
           <span className="font-display text-xl font-black tracking-tight text-brand-900">
             CoxyClean
@@ -60,7 +60,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 aria-current={active ? "page" : undefined}
-                className={`relative text-sm font-medium transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:rounded-full after:bg-accent-400 after:transition-all after:duration-300 ${
+                className={`relative text-sm font-medium transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-0.5 after:rounded-full after:bg-accent-600 after:transition-all after:duration-300 ${
                   active
                     ? "text-brand-900 after:w-full"
                     : "text-slate-600 after:w-0 hover:text-brand-800 hover:after:w-full"
@@ -72,7 +72,7 @@ export default function Navbar() {
           })}
           <Link
             href="/contact"
-            className="btn-shine rounded-full bg-brand-800 px-5 py-2.5 text-sm font-semibold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-gold active:translate-y-0"
+            className="btn-shine rounded-full bg-brand-800 px-5 py-2.5 text-sm font-semibold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-accent active:translate-y-0"
           >
             Get a Free Quote
           </Link>
@@ -121,7 +121,7 @@ export default function Navbar() {
                   {active && (
                     <span
                       aria-hidden="true"
-                      className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-accent-400 align-middle"
+                      className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-accent-600 align-middle"
                     />
                   )}
                   {link.label}

@@ -15,7 +15,7 @@ function StarRating({ rating }: { rating: number }) {
           width="16"
           height="16"
           viewBox="0 0 20 20"
-          className={i < rating ? "text-accent-400" : "text-slate-200"}
+          className={i < rating ? "text-accent-600" : "text-slate-200"}
           fill="currentColor"
           aria-hidden="true"
         >
@@ -152,7 +152,7 @@ export default function Reviews() {
               </p>
               <Link
                 href="/contact"
-                className="btn-shine mt-6 inline-flex rounded-full bg-brand-800 px-6 py-3 text-sm font-semibold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-gold active:translate-y-0"
+                className="btn-shine mt-6 inline-flex rounded-full bg-brand-800 px-6 py-3 text-sm font-semibold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-accent active:translate-y-0"
               >
                 Leave a Review
               </Link>

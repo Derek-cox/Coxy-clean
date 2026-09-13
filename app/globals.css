@@ -12,16 +12,16 @@ body {
   color: #1e293b;
 }
 
-/* Slow-moving hero background wash in the logo's navy/gold. */
+/* Slow-moving hero background wash in the logo's green/white/red. */
 .hero-aurora {
   background-image: linear-gradient(
     120deg,
-    #1d2b4d 0%,
-    #334a80 20%,
-    #ffffff 45%,
-    #edc95a 66%,
-    #bd7d12 82%,
-    #1d2b4d 100%
+    #008c45 0%,
+    #42a673 18%,
+    #ffffff 46%,
+    #e5636b 70%,
+    #cd212a 84%,
+    #008c45 100%
   );
   background-size: 320% 320%;
   animation: aurora-pan 26s ease-in-out infinite;
@@ -72,8 +72,8 @@ body {
 .placeholder-hatch {
   background-image: repeating-linear-gradient(
     45deg,
-    rgba(29, 43, 77, 0.045) 0px,
-    rgba(29, 43, 77, 0.045) 1px,
+    rgba(3, 43, 24, 0.05) 0px,
+    rgba(3, 43, 24, 0.05) 1px,
     transparent 1px,
     transparent 9px
   );

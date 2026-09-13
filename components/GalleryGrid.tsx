@@ -122,7 +122,7 @@ export default function GalleryGrid() {
                   {count > 0 && (
                     <span
                       className={`ml-2 text-xs font-medium ${
-                        selected ? "text-accent-300" : "text-slate-400"
+                        selected ? "text-brand-200" : "text-slate-400"
                       }`}
                     >
                       {count}

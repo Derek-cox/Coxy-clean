@@ -60,10 +60,10 @@ export default function BeforeAfter({
       </div>
 
       {/* Corner labels. */}
-      <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-brand-900/80 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-white backdrop-blur-sm">
+      <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-slate-900/80 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-white backdrop-blur-sm">
         Before
       </span>
-      <span className="pointer-events-none absolute right-3 top-3 rounded-full bg-accent-400/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-brand-900 backdrop-blur-sm">
+      <span className="pointer-events-none absolute right-3 top-3 rounded-full bg-brand-600/95 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-white backdrop-blur-sm">
         After
       </span>
 

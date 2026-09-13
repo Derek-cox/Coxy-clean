@@ -102,7 +102,7 @@ export default function HomePage() {
                 finger.
                 <span
                   aria-hidden="true"
-                  className="absolute -bottom-1 left-0 h-2.5 w-full rounded-full bg-accent-300/70 sm:h-3"
+                  className="absolute -bottom-1 left-0 h-2.5 w-full rounded-full bg-accent-400/60 sm:h-3"
                 />
               </span>
             </h1>
@@ -115,7 +115,7 @@ export default function HomePage() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <Link
                 href="/contact"
-                className="btn-shine rounded-full bg-brand-800 px-7 py-3.5 text-center text-sm font-bold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-gold active:translate-y-0"
+                className="btn-shine rounded-full bg-brand-800 px-7 py-3.5 text-center text-sm font-bold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-accent active:translate-y-0"
               >
                 Get a Free Quote
               </Link>
@@ -157,7 +157,7 @@ export default function HomePage() {
                   fill
                   sizes="(min-width: 768px) 420px, 280px"
                   quality={90}
-                  className="object-contain object-bottom drop-shadow-[0_25px_35px_rgba(20,30,56,0.28)] motion-safe:animate-float"
+                  className="object-contain object-bottom drop-shadow-[0_25px_35px_rgba(3,43,24,0.3)] motion-safe:animate-float"
                   priority
                 />
               </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
                         height="15"
                         viewBox="0 0 20 20"
                         fill="currentColor"
-                        className="flex-shrink-0 text-accent-500"
+                        className="flex-shrink-0 text-brand-600"
                         aria-hidden="true"
                       >
                         <path
@@ -220,7 +220,7 @@ export default function HomePage() {
           {valueProps.map((item, i) => (
             <Reveal key={item.title} delay={i * 75} className="h-full">
               <div className="group h-full rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-accent-300 hover:shadow-lift">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-800 transition-all duration-300 group-hover:bg-accent-400 group-hover:text-brand-900">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-800 transition-all duration-300 group-hover:bg-accent-600 group-hover:text-white">
                   <item.icon className="h-6 w-6" />
                 </div>
                 <h3 className="mt-5 font-display text-lg font-bold text-brand-950">
@@ -271,7 +271,7 @@ export default function HomePage() {
                 href={service.href}
                 className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-300 hover:shadow-lift"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-900 text-accent-300 transition-all duration-300 group-hover:scale-105 group-hover:bg-accent-400 group-hover:text-brand-900">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-900 text-white transition-all duration-300 group-hover:scale-105 group-hover:bg-accent-600 group-hover:text-white">
                   <service.icon className="h-6 w-6" />
                 </div>
                 <h3 className="mt-5 font-display text-xl font-bold text-brand-950">
@@ -317,7 +317,7 @@ export default function HomePage() {
           <Reveal delay={180} className="mt-12 text-center">
             <Link
               href="/gallery"
-              className="btn-shine inline-flex rounded-full bg-brand-800 px-7 py-3.5 text-sm font-bold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-gold active:translate-y-0"
+              className="btn-shine inline-flex rounded-full bg-brand-800 px-7 py-3.5 text-sm font-bold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-accent active:translate-y-0"
             >
               View the Full Gallery
             </Link>
@@ -343,7 +343,7 @@ export default function HomePage() {
               className="pointer-events-none absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-brand-400/20 blur-3xl"
             />
             <div className="relative">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-300">
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-200">
                 Get Started
               </p>
               <h2 className="mt-3 font-display text-4xl font-black tracking-tight text-white sm:text-5xl">
@@ -356,7 +356,7 @@ export default function HomePage() {
             <div className="relative flex flex-col gap-3 sm:flex-row sm:gap-4">
               <Link
                 href="/contact"
-                className="btn-shine rounded-full bg-accent-400 px-7 py-3.5 text-sm font-bold text-brand-900 shadow-glow-gold transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-300 active:translate-y-0"
+                className="btn-shine rounded-full bg-accent-600 px-7 py-3.5 text-sm font-bold text-white shadow-glow-accent transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-700 active:translate-y-0"
               >
                 Request Your Free Quote
               </Link>

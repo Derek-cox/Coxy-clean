@@ -51,7 +51,7 @@ export default function HiringPage() {
         {perks.map((perk, i) => (
           <Reveal key={perk.title} delay={i * 75}>
             <div className="group h-full rounded-2xl border border-slate-200 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-200 hover:shadow-lg">
-              <perk.icon className="h-8 w-8 text-accent-700 transition-transform duration-300 group-hover:scale-110" />
+              <perk.icon className="h-8 w-8 text-brand-700 transition-transform duration-300 group-hover:scale-110" />
               <h3 className="mt-4 font-display text-lg font-bold text-brand-950">
                 {perk.title}
               </h3>
