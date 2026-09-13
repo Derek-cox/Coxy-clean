@@ -4,23 +4,24 @@
 
 html {
   scroll-behavior: smooth;
+  /* Keep anchored sections clear of the sticky navbar. */
+  scroll-padding-top: 5rem;
 }
 
 body {
   color: #1e293b;
 }
 
-/* Slow-moving hero background wash: bright blue, white, and a fresh
-   mint accent — a clean, sparkling feel rather than a moody one. */
+/* Slow-moving hero background wash in the logo's navy/gold. */
 .hero-aurora {
   background-image: linear-gradient(
     120deg,
-    #0284c7 0%,
-    #53abd9 22%,
+    #1d2b4d 0%,
+    #334a80 20%,
     #ffffff 45%,
-    #5ab6ae 68%,
-    #0d9488 84%,
-    #0284c7 100%
+    #edc95a 66%,
+    #bd7d12 82%,
+    #1d2b4d 100%
   );
   background-size: 320% 320%;
   animation: aurora-pan 26s ease-in-out infinite;
@@ -66,7 +67,62 @@ body {
   left: 130%;
 }
 
+/* Placeholder tiles: a quiet diagonal hatch so empty slots read as
+   "reserved", not "broken". */
+.placeholder-hatch {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(29, 43, 77, 0.045) 0px,
+    rgba(29, 43, 77, 0.045) 1px,
+    transparent 1px,
+    transparent 9px
+  );
+}
+
+/* Invisible range input that drives the before/after comparison slider.
+   Using a real input keeps it keyboard- and screen-reader-operable. */
+.compare-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+.compare-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 44px;
+  height: 100%;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+.compare-range::-moz-range-thumb {
+  width: 44px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: ew-resize;
+}
+
+.compare-range:focus-visible {
+  outline: none;
+}
+
+/* Hide scrollbars on the horizontally scrollable category tab rail. */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   .hero-aurora {
     animation: none;
   }

@@ -99,7 +99,7 @@ export default function ServicesPage() {
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
           What We Offer
         </p>
-        <h1 className="mt-3 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
+        <h1 className="mt-3 font-display text-5xl font-black tracking-tight text-brand-950 sm:text-6xl">
           Services &amp; Pricing
         </h1>
         <p className="mt-5 text-lg text-slate-600 leading-relaxed">
@@ -120,7 +120,7 @@ export default function ServicesPage() {
         <div className="relative grid gap-6 md:grid-cols-3">
           {services.map((service, i) => (
             <Reveal key={service.name} delay={i * 75}>
-              <div className="group flex h-full flex-col rounded-2xl border border-white/15 bg-white/10 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.14] hover:shadow-glow-green hover:backdrop-blur-lg">
+              <div className="group flex h-full flex-col rounded-2xl border border-white/15 bg-white/10 p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-white/25 hover:bg-white/[0.14] hover:shadow-glow-gold hover:backdrop-blur-lg">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/15 text-accent-300 transition-colors duration-300 group-hover:bg-white/25 group-hover:text-white">
                   <service.icon className="h-6 w-6" />
                 </div>
@@ -168,11 +168,17 @@ export default function ServicesPage() {
                   your first booking with us.
                 </p>
               </div>
-              <div className="rounded-2xl bg-white/95 px-6 py-4 shadow-lg">
-                <p className="font-display text-lg font-bold text-brand-700">
-                  Estimated $0.15&ndash;$0.30 per sq ft
+              <div className="w-full rounded-2xl bg-white/95 px-5 py-4 shadow-lg sm:w-auto">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-slate-500">
+                  Estimated
                 </p>
-                <p className="mt-1 text-xs text-slate-500">
+                <p className="mt-1 font-display text-xl font-black text-brand-800">
+                  $0.15&ndash;$0.30
+                  <span className="ml-1 text-sm font-bold text-slate-500">
+                    / sq ft
+                  </span>
+                </p>
+                <p className="mt-2 max-w-[15rem] text-xs text-slate-500">
                   Final quote depends on condition and scope
                 </p>
               </div>
@@ -209,7 +215,7 @@ export default function ServicesPage() {
 
             <Link
               href="/contact"
-              className="btn-shine mt-8 inline-flex w-fit items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-glow-accent active:translate-y-0"
+              className="btn-shine mt-8 inline-flex w-fit items-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-brand-700 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-50 hover:shadow-glow-gold active:translate-y-0"
             >
               Get a Quote
             </Link>

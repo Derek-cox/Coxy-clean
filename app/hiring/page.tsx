@@ -39,7 +39,7 @@ export default function HiringPage() {
         <span className="inline-flex items-center rounded-full bg-accent-100 px-4 py-1 text-sm font-medium text-accent-700">
           We&apos;re Hiring
         </span>
-        <h1 className="mt-6 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
+        <h1 className="mt-6 font-display text-5xl font-black tracking-tight text-brand-950 sm:text-6xl">
           Join the CoxyClean team
         </h1>
         <p className="mt-5 text-lg text-slate-600 leading-relaxed">
@@ -52,7 +52,7 @@ export default function HiringPage() {
           <Reveal key={perk.title} delay={i * 75}>
             <div className="group h-full rounded-2xl border border-slate-200 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent-200 hover:shadow-lg">
               <perk.icon className="h-8 w-8 text-accent-700 transition-transform duration-300 group-hover:scale-110" />
-              <h3 className="mt-4 font-display text-lg font-bold text-slate-900">
+              <h3 className="mt-4 font-display text-lg font-bold text-brand-950">
                 {perk.title}
               </h3>
               <p className="mt-2 text-sm text-slate-600">{perk.description}</p>
@@ -66,7 +66,7 @@ export default function HiringPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
             Join The Team
           </p>
-          <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+          <h2 className="mt-3 font-display text-2xl font-black tracking-tight text-brand-950 sm:text-3xl">
             Apply now
           </h2>
           <p className="mt-4 text-slate-600 leading-relaxed">
@@ -74,7 +74,7 @@ export default function HiringPage() {
           </p>
           <div className="mt-6">
             <h3 className="text-sm font-semibold text-slate-900">Email</h3>
-            <a href="mailto:careers@coxyclean.com" className="text-brand-600">
+            <a href="mailto:careers@coxyclean.com" className="font-medium text-brand-700 underline-offset-4 transition-colors hover:text-accent-700 hover:underline">
               careers@coxyclean.com
             </a>
           </div>

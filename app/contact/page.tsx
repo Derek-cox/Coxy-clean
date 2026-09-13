@@ -16,7 +16,7 @@ export default function ContactPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
             Contact
           </p>
-          <h1 className="mt-3 font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
+          <h1 className="mt-3 font-display text-5xl font-black tracking-tight text-brand-950 sm:text-6xl">
             Get in Touch
           </h1>
           <p className="mt-5 text-slate-600 leading-relaxed">
@@ -26,13 +26,13 @@ export default function ContactPage() {
           <div className="mt-8 space-y-6">
             <div>
               <h2 className="text-sm font-semibold text-slate-900">Phone</h2>
-              <a href="tel:+18142807074" className="text-brand-600">
+              <a href="tel:+18142807074" className="font-medium text-brand-700 underline-offset-4 transition-colors hover:text-accent-700 hover:underline">
                 (814) 280-7074
               </a>
             </div>
             <div>
               <h2 className="text-sm font-semibold text-slate-900">Email</h2>
-              <a href="mailto:hello@coxyclean.com" className="text-brand-600">
+              <a href="mailto:hello@coxyclean.com" className="font-medium text-brand-700 underline-offset-4 transition-colors hover:text-accent-700 hover:underline">
                 hello@coxyclean.com
               </a>
             </div>

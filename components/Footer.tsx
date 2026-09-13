@@ -31,10 +31,11 @@ export default function Footer() {
         <div>
           <h3 className="text-sm font-semibold text-slate-900">Company</h3>
           <ul className="mt-3 space-y-2 text-sm text-slate-500">
-            <li><Link href="/" className="hover:text-brand-600">Home</Link></li>
-            <li><Link href="/services" className="hover:text-brand-600">Services</Link></li>
-            <li><Link href="/about" className="hover:text-brand-600">About</Link></li>
-            <li><Link href="/hiring" className="hover:text-brand-600">We&apos;re Hiring</Link></li>
+            <li><Link href="/" className="transition-colors hover:text-brand-700">Home</Link></li>
+            <li><Link href="/services" className="transition-colors hover:text-brand-700">Services</Link></li>
+            <li><Link href="/gallery" className="transition-colors hover:text-brand-700">Our Work</Link></li>
+            <li><Link href="/about" className="transition-colors hover:text-brand-700">About</Link></li>
+            <li><Link href="/hiring" className="transition-colors hover:text-brand-700">We&apos;re Hiring</Link></li>
           </ul>
         </div>
 
@@ -43,12 +44,12 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm text-slate-500">
             <li>State College, PA</li>
             <li>
-              <a href="tel:+18142807074" className="hover:text-brand-600">
+              <a href="tel:+18142807074" className="hover:text-brand-700">
                 (814) 280-7074
               </a>
             </li>
             <li>
-              <a href="mailto:hello@coxyclean.com" className="hover:text-brand-600">
+              <a href="mailto:hello@coxyclean.com" className="hover:text-brand-700">
                 hello@coxyclean.com
               </a>
             </li>
@@ -64,7 +65,8 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-slate-200 py-6 text-center text-xs text-slate-400">
+      {/* Extra bottom padding on mobile clears the sticky booking bar. */}
+      <div className="border-t border-slate-200 py-6 pb-24 text-center text-xs text-slate-400 sm:pb-6">
         &copy; {new Date().getFullYear()} CoxyClean. All rights reserved.
       </div>
     </footer>

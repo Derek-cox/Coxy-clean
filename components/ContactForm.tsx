@@ -129,16 +129,31 @@ export default function ContactForm() {
       </div>
 
       {status === "error" && (
-        <p className="text-sm text-red-600">
-          Something went wrong sending your message. Please try again, or
-          email us directly at hello@coxyclean.com.
-        </p>
+        <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-700">
+          <p className="font-semibold">
+            Something went wrong sending your message.
+          </p>
+          <p className="mt-1">
+            Please try again, call{" "}
+            <a href="tel:+18142807074" className="font-semibold underline">
+              (814) 280-7074
+            </a>
+            , or email{" "}
+            <a
+              href="mailto:hello@coxyclean.com"
+              className="font-semibold underline"
+            >
+              hello@coxyclean.com
+            </a>
+            .
+          </p>
+        </div>
       )}
 
       <button
         type="submit"
         disabled={status === "submitting"}
-        className="btn-shine w-full rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-glow-green active:translate-y-0 disabled:pointer-events-none disabled:translate-y-0 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+        className="btn-shine w-full rounded-full bg-brand-800 px-6 py-3 text-sm font-bold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-gold active:translate-y-0 disabled:pointer-events-none disabled:translate-y-0 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
       >
         {status === "submitting" ? "Sending..." : "Send Message"}
       </button>

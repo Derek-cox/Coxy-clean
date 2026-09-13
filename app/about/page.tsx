@@ -53,7 +53,7 @@ export default function AboutPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
               About Us
             </p>
-            <h1 className="mt-3 font-display text-5xl font-bold leading-[1.05] tracking-tight text-slate-900 sm:text-6xl">
+            <h1 className="mt-3 font-display text-5xl font-black leading-[1.05] tracking-tight text-brand-950 sm:text-6xl">
               About CoxyClean
             </h1>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">
@@ -77,7 +77,7 @@ export default function AboutPage() {
                   fill
                   sizes="(min-width: 768px) 380px, 320px"
                   quality={95}
-                  className="object-contain drop-shadow-[0_25px_35px_rgba(2,132,199,0.3)]"
+                  className="object-contain drop-shadow-[0_25px_35px_rgba(20,30,56,0.28)]"
                 />
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent-700">
             The CoxyClean Difference
           </p>
-          <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="mt-3 font-display text-3xl font-black tracking-tight text-brand-950 sm:text-4xl">
             Why choose us
           </h2>
         </Reveal>
@@ -102,8 +102,8 @@ export default function AboutPage() {
           {reasons.map((reason, i) => (
             <Reveal key={reason.title} delay={i * 75}>
               <div className="group">
-                <reason.icon className="h-8 w-8 text-brand-600 transition-transform duration-300 group-hover:scale-110" />
-                <h3 className="mt-3 font-display text-lg font-bold text-slate-900">
+                <reason.icon className="h-8 w-8 text-brand-800 transition-transform duration-300 group-hover:scale-110" />
+                <h3 className="mt-3 font-display text-lg font-bold text-brand-950">
                   {reason.title}
                 </h3>
                 <p className="mt-2 text-sm text-slate-600">{reason.description}</p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
       <div className="mx-auto max-w-6xl px-6 pb-24">
         <Reveal>
           <div className="flex flex-col items-center gap-6 rounded-3xl bg-slate-50 px-8 py-14 text-center">
-            <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            <h2 className="font-display text-3xl font-black tracking-tight text-brand-950 sm:text-4xl">
               Let&apos;s get your space looking its best
             </h2>
             <p className="max-w-xl text-slate-600">
@@ -124,7 +124,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="btn-shine rounded-full bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700 hover:shadow-glow-green active:translate-y-0"
+              className="btn-shine rounded-full bg-brand-800 px-6 py-3 text-sm font-bold text-white shadow-glow-brand transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-900 hover:shadow-glow-gold active:translate-y-0"
             >
               Get a Free Quote
             </Link>

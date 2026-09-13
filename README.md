@@ -4,11 +4,40 @@ Marketing site for CoxyClean, a cleaning business in State College, PA. Built wi
 
 ## Pages
 
-- `/` — Home: hero, value props, services preview, CTA
+- `/` — Home: hero, value props, How It Works, services, work preview, reviews, CTA
 - `/services` — Services & starting pricing (Airbnb turnover, residential, commercial, move-out)
+- `/gallery` — Our Work: category tabs, before/after sliders, lightbox
 - `/about` — About / why choose us
 - `/contact` — Contact form
 - `/hiring` — We're hiring page with an application form
+
+## Adding your own content
+
+Two files hold all the content you'll edit regularly. You should not need to
+touch any component code.
+
+### Photos — `data/gallery.ts`
+
+1. Drop image files into `public/gallery/` (see the README in that folder).
+2. Add one entry per photo to the `galleryItems` array. Commented-out
+   examples are in the file.
+
+Before/after pairs get a drag-to-compare slider; single photos get a plain
+tile. Both open in the lightbox. Any category with no photos automatically
+shows "Photo coming soon" placeholders — no stock imagery anywhere.
+
+### Reviews — `data/reviews.ts`
+
+Add entries to the `reviews` array. Each review shows a first name + last
+initial, a star rating, the quote, and a service tag. The section looks
+right with as few as three; until you add any, it shows a "Reviews coming
+soon" state rather than invented testimonials.
+
+### Colors — `tailwind.config.ts`
+
+The whole site is built on two token scales, `brand` (navy) and `accent`
+(gold), both sampled from the logo. Changing the palette means editing that
+one file — no component changes needed.
 
 ## Getting started locally
 

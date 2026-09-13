@@ -126,6 +126,28 @@ export function HandshakeIcon({ className }: IconProps) {
   );
 }
 
+export function CalendarCheckIcon({ className }: IconProps) {
+  return (
+    <svg className={className} {...base}>
+      <rect x="3.5" y="5" width="17" height="15" rx="2" />
+      <path d="M3.5 9.5h17" />
+      <path d="M8 3v4M16 3v4" />
+      <path d="M9 14l2 2 4-4" />
+    </svg>
+  );
+}
+
+export function SofaIcon({ className }: IconProps) {
+  return (
+    <svg className={className} {...base}>
+      <path d="M4 11V8a2 2 0 012-2h12a2 2 0 012 2v3" />
+      <path d="M4 11a2 2 0 00-2 2v4h20v-4a2 2 0 00-2-2 2 2 0 00-2 2v1H6v-1a2 2 0 00-2-2z" />
+      <path d="M4 17v2M20 17v2" />
+      <path d="M7 11h10" />
+    </svg>
+  );
+}
+
 export function SparkleChecklistIcon({ className }: IconProps) {
   return (
     <svg className={className} {...base}>
