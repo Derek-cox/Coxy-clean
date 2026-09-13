@@ -31,3 +31,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Camera originals imported into public/gallery (kept locally, not deployed)
+/PUBLIC:GALLERY/

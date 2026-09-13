@@ -56,7 +56,7 @@ export default function Lightbox({
     <div
       role="dialog"
       aria-modal="true"
-      aria-label={`${item.title} — photo ${index + 1} of ${count}`}
+      aria-label={`${item.caption} — photo ${index + 1} of ${count}`}
       className="fixed inset-0 z-[100] flex flex-col bg-brand-950/95 backdrop-blur-sm"
       onClick={onClose}
     >
@@ -122,7 +122,7 @@ export default function Lightbox({
                 <BeforeAfter
                   before={item.before}
                   after={item.after}
-                  title={item.title}
+                  title={item.caption}
                   sizes="(min-width: 768px) 768px, 100vw"
                   priority
                 />
@@ -130,7 +130,7 @@ export default function Lightbox({
                 item.src && (
                   <Image
                     src={item.src}
-                    alt={item.title}
+                    alt={item.caption}
                     fill
                     sizes="(min-width: 768px) 768px, 100vw"
                     priority
@@ -172,7 +172,7 @@ export default function Lightbox({
         onClick={(event) => event.stopPropagation()}
       >
         <p className="font-display text-lg font-bold text-white">
-          {item.title}
+          {item.caption}
         </p>
         {isBeforeAfter(item) && (
           <p className="mt-1 text-xs text-white/50">

@@ -5,6 +5,7 @@ import Reveal from "@/components/Reveal";
 import Reviews from "@/components/Reviews";
 import SectionDivider from "@/components/SectionDivider";
 import { GalleryPreview } from "@/components/GalleryGrid";
+import { TRUST_LINE } from "@/data/gallery";
 import {
   BuildingIcon,
   ChatIcon,
@@ -305,7 +306,7 @@ export default function HomePage() {
               Before and after
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-slate-600">
-              Photos from our own jobs around State College — never stock.
+              {TRUST_LINE}
             </p>
           </Reveal>
 

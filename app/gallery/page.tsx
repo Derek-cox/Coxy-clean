@@ -31,17 +31,15 @@ export default function GalleryPage() {
             </h1>
             <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-white/60">
               {hasPhotos
-                ? "Real jobs from around State College. Drag any before/after slider to see the whole change."
-                : "We're building this out with photos from real State College jobs — every image here will be our own work, never stock."}
+                ? "Real jobs, shot on site. Drag any before/after slider to see the whole change."
+                : "We're building this out with photos from real jobs — every image here will be our own work, never stock."}
             </p>
           </Reveal>
         </div>
-        <SectionDivider variant="curve" fill="#ffffff" />
+        <SectionDivider variant="curve" fill="#f8fafc" />
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
-        <GalleryGrid />
-      </section>
+      <GalleryGrid />
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <Reveal>
