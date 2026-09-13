@@ -2,10 +2,6 @@
 
 import { useState, type FormEvent } from "react";
 
-// TODO: Replace with your own Formspree endpoint (or any form backend) before launch.
-// Create a separate form at https://formspree.io so applications land in their own inbox.
-const FORM_ENDPOINT = "https://formspree.io/f/your-hiring-form-id";
-
 type Status = "idle" | "submitting" | "success" | "error";
 
 export default function ApplicationForm() {
@@ -17,12 +13,15 @@ export default function ApplicationForm() {
 
     const form = event.currentTarget;
     const data = new FormData(form);
+    const payload = Object.fromEntries(
+      Array.from(data.entries()).map(([key, value]) => [key, String(value)])
+    );
 
     try {
-      const response = await fetch(FORM_ENDPOINT, {
+      const response = await fetch("/api/apply", {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {

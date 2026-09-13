@@ -58,21 +58,55 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 ## Before you launch
 
-The contact and application forms post to [Formspree](https://formspree.io) (a free service for handling form submissions on static/serverless sites — no backend needed). You need to point them at your own form:
+The lead form posts to `/api/lead`, which creates the lead in BookingKoala
+and only shows the customer a success message once BookingKoala confirms it.
+The hiring form posts to `/api/apply`, which emails you the application.
 
-1. Create a free account at [formspree.io](https://formspree.io).
-2. Create two forms: one for general contact, one for job applications.
-3. Copy each form's endpoint (`https://formspree.io/f/xxxxxxxx`).
-4. Paste them into:
-   - `components/ContactForm.tsx` (`FORM_ENDPOINT`)
-   - `components/ApplicationForm.tsx` (`FORM_ENDPOINT`)
+### Environment variables
 
-Also update the placeholder phone number, email addresses, and hours in:
+Copy `.env.example` to `.env.local` for local work, and add the same keys in
+Vercel under **Project → Settings → Environment Variables** (Production,
+Preview, and Development), then redeploy.
 
-- `components/Navbar.tsx`
-- `components/Footer.tsx`
-- `app/contact/page.tsx`
-- `app/hiring/page.tsx`
+Required for the lead form:
+
+| Variable | What it is |
+| --- | --- |
+| `BOOKINGKOALA_API_KEY` | Settings → General → Apps & Integrations → Make → Generate API Key |
+| `BOOKINGKOALA_SUBDOMAIN` | Subdomain only. `coxyclean` for `coxyclean.bookingkoala.com` |
+
+Strongly recommended, so a failed lead is never lost:
+
+| Variable | What it is |
+| --- | --- |
+| `RESEND_API_KEY` | Free key from [resend.com](https://resend.com) |
+| `LEAD_NOTIFY_TO` | Where failed leads get emailed |
+
+`.env.example` documents the optional ones: contract overrides, a webhook
+channel, the careers inbox, and the diagnostic token.
+
+### If BookingKoala rejects the call
+
+BookingKoala publishes no public REST reference, so the endpoint path, auth
+header, and field names default to the conventional shape and are
+overridable by env var rather than hardcoded. To confirm the real values,
+open Make, add BookingKoala's **Make an API Call** module, connect it with
+your key and subdomain, and read the URL field — or run their **Create
+lead** module once and inspect the execution log for the field names. Then
+set `BOOKINGKOALA_LEAD_PATH` / `BOOKINGKOALA_AUTH_HEADER`. Only the payload
+field names live in code, in `lib/bookingkoala.ts`.
+
+Set `LEAD_DIAGNOSTIC_TOKEN` and hit
+`/api/lead?token=YOUR_TOKEN` to see which variables the running deployment
+can see and what URL it resolves — without exposing any secret.
+
+### What happens when something breaks
+
+A lead is never silently dropped. If BookingKoala fails, the route logs the
+full error and response body server-side, emails you the complete lead, and
+tells the customer their request came through directly rather than showing
+a success that did not happen. If every channel fails, the lead is still in
+the Vercel runtime logs and the customer is shown the phone number.
 
 ## Deploying to Vercel
 
