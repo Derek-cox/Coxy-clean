@@ -38,6 +38,7 @@ export default function ContactForm() {
       email: data.get("email"),
       phone: data.get("phone"),
       address: data.get("address"),
+      apt: data.get("apt"),
       city: data.get("city"),
       zip: data.get("zip"),
       service: data.get("service"),
@@ -168,13 +169,23 @@ export default function ContactForm() {
         <FieldError message={errors.email} />
       </div>
 
-      <div>
-        <label htmlFor="address" className="block text-sm font-medium text-slate-700">
-          Street address
-        </label>
-        <input id="address" name="address" type="text" required autoComplete="street-address"
-          className={inputClass} placeholder="123 Main St" />
-        <FieldError message={errors.address} />
+      <div className="grid gap-5 sm:grid-cols-[2fr_1fr]">
+        <div>
+          <label htmlFor="address" className="block text-sm font-medium text-slate-700">
+            Street address
+          </label>
+          <input id="address" name="address" type="text" required autoComplete="street-address"
+            className={inputClass} placeholder="123 Main St" />
+          <FieldError message={errors.address} />
+        </div>
+        <div>
+          <label htmlFor="apt" className="block text-sm font-medium text-slate-700">
+            Apt / Unit <span className="text-slate-400">(optional)</span>
+          </label>
+          <input id="apt" name="apt" type="text" autoComplete="address-line2"
+            className={inputClass} placeholder="4B" />
+          <FieldError message={errors.apt} />
+        </div>
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">

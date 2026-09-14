@@ -85,16 +85,34 @@ Strongly recommended, so a failed lead is never lost:
 `.env.example` documents the optional ones: contract overrides, a webhook
 channel, the careers inbox, and the diagnostic token.
 
+### What gets sent to BookingKoala
+
+The Create Lead schema, confirmed in Make, is: First Name, Last Name, Email
+(the only required field), Phone Number, Referrer Path, Referrer Source,
+Address, City, State, Zipcode, Country, Apt.
+
+There is no field for service type, add-ons, square footage, price, or
+notes, so all of that is packed into **Referrer Path**:
+
+```
+Website Lead — Move-In / Move-Out — Add-ons: Windows — 1800 sq ft
+  — Est. $270–$540 — Notes: gate code is 1234
+```
+
+Referrer Source carries a short `coxyclean.com website form`. State and
+Country default to PA/US, set in `lib/bookingkoala.ts`. The estimate uses
+the same per-square-foot range the services page quotes, defined once in
+`lib/leads.ts`.
+
 ### If BookingKoala rejects the call
 
-BookingKoala publishes no public REST reference, so the endpoint path, auth
-header, and field names default to the conventional shape and are
-overridable by env var rather than hardcoded. To confirm the real values,
-open Make, add BookingKoala's **Make an API Call** module, connect it with
-your key and subdomain, and read the URL field — or run their **Create
-lead** module once and inspect the execution log for the field names. Then
-set `BOOKINGKOALA_LEAD_PATH` / `BOOKINGKOALA_AUTH_HEADER`. Only the payload
-field names live in code, in `lib/bookingkoala.ts`.
+The field labels are confirmed, but Make displays human labels rather than
+JSON keys, and BookingKoala publishes no REST reference. So the endpoint
+path, auth header, and label casing are env-overridable rather than
+hardcoded. If a call fails, the log names the exact keys that were sent —
+work down `BOOKINGKOALA_FIELD_CASE`: `snake` (default), `camel`, `pascal`,
+`title`. For the path, open BookingKoala's **Make an API Call** module and
+read its URL field, then set `BOOKINGKOALA_LEAD_PATH`.
 
 Set `LEAD_DIAGNOSTIC_TOKEN` and hit
 `/api/lead?token=YOUR_TOKEN` to see which variables the running deployment

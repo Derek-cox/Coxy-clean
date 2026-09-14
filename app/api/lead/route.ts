@@ -68,6 +68,8 @@ export async function POST(request: Request) {
       reason: bk.reason,
       httpStatus: bk.status ?? null,
       responseBody: bk.body ?? null,
+      sentFieldNames: bk.sentKeys ?? null,
+      fieldCase: configSummary().fieldCase,
       target: configSummary().resolvedUrl,
     })
   );
